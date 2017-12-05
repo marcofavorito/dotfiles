@@ -1,5 +1,5 @@
 # dotfiles
-My dotfiles.
+My dotfiles and environment setup scripts.
 
 
 ## links
