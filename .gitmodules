@@ -1,0 +1,12 @@
+[submodule "vim.symlink/bundle/command-t"]
+	path = vim.symlink/bundle/command-t
+	url = git@github.com:wincent/command-t.git
+[submodule "vim.symlink/bundle/lightline.vim"]
+	path = vim.symlink/bundle/lightline.vim
+	url = git@github.com:itchyny/lightline.vim.git
+[submodule "vim.symlink/bundle/nerdcommenter"]
+	path = vim.symlink/bundle/nerdcommenter
+	url = git@github.com:scrooloose/nerdcommenter.git
+[submodule "vim.symlink/bundle/nerdtree"]
+	path = vim.symlink/bundle/nerdtree
+	url = git@github.com:scrooloose/nerdtree.git

@@ -1,3 +1,4 @@
+B
 # dotfiles
 My dotfiles and environment setup scripts.
 
@@ -20,3 +21,5 @@ There's a few special files in the hierarchy.
 ## credits
 
 Many thanks to [@holman/dotfiles](https://github.com/holman/dotfiles); I drawn a lot of inspiration from his dotfiles repo.
+
+Thanks also to [this post](http://marcgg.com/blog/2016/03/01/vimrc-example/) for Vim configurations.

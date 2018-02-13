@@ -1,0 +1,64 @@
+execute pathogen#infect()
+" to add plugins: git submodule add git@source/pluginname.git bundle/pluginname
+
+syntax on
+
+" Wrap gitcommit file types at the appropriate length
+filetype indent plugin on
+
+" look at http://marcgg.com/blog/2016/03/01/vimrc-example/
+
+" colorscheme Tomorrow-Night
+" set guifont=Menlo\ Regular:h18
+" set lines=35 columns=150
+
+set colorcolumn=90
+
+set number
+
+" let mapleader=" "
+map <leader>s :source ~/.vimrc<CR>
+
+set hidden
+set history=100
+
+set nowrap
+set tabstop=2
+set shiftwidth=2
+set expandtab
+set smartindent
+set autoindent
+
+" autocmd BufWritePre * :%s/\s\+$//e
+
+"When running a search, get Vim to highlight found words:
+
+set hlsearch
+
+"Ability to cancel a search with Escape:
+" nnoremap <silent> <Esc> :nohlsearch<Bar>:echo<CR>
+
+" show matching parenthesis
+set showmatch
+
+
+" Ability to cancel a search with Escape
+" nnoremap <silent> <Esc> :nohlsearch<Bar>:echo<CR>
+
+
+" use arrows
+" map <D-A-RIGHT> <C-w>l
+" map <D-A-LEFT> <C-w>h
+" map <D-A-DOWN> <C-w><C-w>
+" map <D-A-UP> <C-w>W
+nnoremap <Leader><Leader> :e#<CR>
+
+
+" Command-T
+set wildignore+=*.log,*.sql,*.cache
+
+"When you create a new file, it’s not indexed by default. Here a way to reindex everything by simply pressing <Leader>+r:
+noremap <Leader>r :CommandTFlush<CR>
+
+
+
