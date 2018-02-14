@@ -53,12 +53,77 @@ set showmatch
 " map <D-A-UP> <C-w>W
 nnoremap <Leader><Leader> :e#<CR>
 
-
+"""""""""""""""""""""""""""""""""""""""""
 " Command-T
+" Fast file navigation for VIM
+" https://github.com/wincent/command-t
+"""""""""""""""""""""""""""""""""""""""""
 set wildignore+=*.log,*.sql,*.cache
 
 "When you create a new file, it’s not indexed by default. Here a way to reindex everything by simply pressing <Leader>+r:
 noremap <Leader>r :CommandTFlush<CR>
 
+"""""""""""""""""""""""""""""""""""""""""
+" NerdTree
+" A tree explorer plugin for vim.
+" https://github.com/scrooloose/nerdtree
+"""""""""""""""""""""""""""""""""""""""""
+" Hit the right arrow to open a node:
 
+let NERDTreeMapActivateNode='<right>'
+
+"Display hidden files:
+
+let NERDTreeShowHidden=1
+
+"Toggle display of the tree with <Leader> + n:
+
+nmap <leader>n :NERDTreeToggle<CR>
+
+"Locate the focused file in the tree with <Leader> + j:
+
+nmap <leader>j :NERDTreeFind<CR>
+
+" Always open the tree when booting Vim, but don’t focus it:
+
+autocmd VimEnter * NERDTree
+autocmd VimEnter * wincmd p
+
+" Do not display some useless files in the tree:
+
+let NERDTreeIgnore=['\.DS_Store', '\~$', '\.swp']
+
+"""""""""""""""""""""""""""""""""""""""
+" lightline.vim 
+" A light and configurable statusline/tabline plugin for Vim
+" https://github.com/itchyny/lightline.vim
+"""""""""""""""""""""""""""""""""""""""
+set laststatus=2
+
+
+"""""""""""""""""""""""""""""""""""""""
+" nerdcommenter
+" Vim plugin for intensely orgasmic commenting
+" https://github.com/scrooloose/nerdcommenter
+"""""""""""""""""""""""""""""""""""""""
+" Add spaces after comment delimiters by default
+let g:NERDSpaceDelims = 1
+
+" Use compact syntax for prettified multi-line comments
+let g:NERDCompactSexyComs = 1
+
+" Align line-wise comment delimiters flush left instead of following code indentation
+let g:NERDDefaultAlign = 'left'
+
+" Set a language to use its alternate delimiters by default
+let g:NERDAltDelims_java = 1
+
+" Add your own custom formats or override the defaults
+let g:NERDCustomDelimiters = { 'c': { 'left': '/**','right': '*/' } }
+
+" Allow commenting and inverting empty lines (useful when commenting a region)
+let g:NERDCommentEmptyLines = 1
+
+" Enable trimming of trailing whitespace when uncommenting
+let g:NERDTrimTrailingWhitespace = 1
 
