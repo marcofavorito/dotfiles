@@ -141,9 +141,9 @@ then
 fi
 
 # all of our zsh files
-typeset -u config_files
-config_files=($ZSH/**/*.sh)
-echo $config_files
+#typeset -u config_files
+#config_files=($ZSH/**/*.sh)
+#echo $config_files
 # load the path files
 #for file in ${(M)config_files:#*/path.sh}
 #do
@@ -166,7 +166,15 @@ echo $config_files
 #  source $file
 # done
 
-unset config_files
+#unset config_files
+
+#load the path files
+for file in $(find $ZSH -maxdepth 2 -name env.sh -or -name path.sh)
+do
+  source $file
+done
+
+
 
 # Better history
 # Credits to https://coderwall.com/p/jpj_6q/zsh-better-history-searching-with-arrow-keys
@@ -185,3 +193,4 @@ unset config_files
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
