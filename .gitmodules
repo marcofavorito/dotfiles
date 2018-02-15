@@ -19,3 +19,15 @@
 [submodule "vim.symlink/bundle/YouCompleteMe"]
 	path = vim.symlink/bundle/YouCompleteMe
 	url = git@github.com:valloric/YouCompleteMe.git
+[submodule "vim.symlink/bundle/vim-autoclose"]
+	path = vim.symlink/bundle/vim-autoclose
+	url = git@github.com:Townk/vim-autoclose.git
+[submodule "vim.symlink/bundle/syntastic"]
+	path = vim.symlink/bundle/syntastic
+	url = git@github.com:vim-syntastic/syntastic.git
+[submodule "vim.symlink/vim_go_runtime.symlink"]
+	path = vim.symlink/vim_go_runtime.symlink
+	url = git@github.com:farazdagi/vim-go-ide.git
+[submodule "vim.symlink/bundle/vim-gocode"]
+	path = vim.symlink/bundle/vim-gocode
+	url = https://github.com/Blackrush/vim-gocode.git

@@ -8,4 +8,6 @@ cd YouCompleteMe
 cd ../../..
 
 #####
+## install vim-go
+sh vim.symlink/vim_go_runtime.symlink/bin/install
 
