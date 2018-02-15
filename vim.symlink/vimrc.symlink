@@ -23,7 +23,9 @@ set hidden
 set history=100
 
 set nowrap
-set tabstop=2
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
 set shiftwidth=2
 set expandtab
 set smartindent
@@ -52,6 +54,18 @@ set showmatch
 " map <D-A-DOWN> <C-w><C-w>
 " map <D-A-UP> <C-w>W
 nnoremap <Leader><Leader> :e#<CR>
+
+
+"split navigations
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Plugin configurations
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 """""""""""""""""""""""""""""""""""""""""
 " Command-T

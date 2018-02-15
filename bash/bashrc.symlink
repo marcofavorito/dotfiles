@@ -141,30 +141,30 @@ then
 fi
 
 # all of our zsh files
-typeset -U config_files
+typeset -u config_files
 config_files=($ZSH/**/*.sh)
-
+echo $config_files
 # load the path files
-for file in ${(M)config_files:#*/path.sh}
-do
-  source $file
-done
+#for file in ${(M)config_files:#*/path.sh}
+#do
+#  source $file
+#done
 
 # load everything but the path and completion files
-for file in ${${config_files:#*/path.sh}:#*/completion.sh}
-do
-  source $file
-done
+#for file in ${${config_files:#*/path.sh}:#*/completion.sh}
+#do
+#  source $file
+#done
 
 # initialize autocomplete here, otherwise functions won't be loaded
-autoload -U compinit
-compinit
+#autoload -U compinit
+#compinit
 
 # load every completion after autocomplete loads
-for file in ${(M)config_files:#*/completion.sh}
-do
-  source $file
-done
+#for file in ${(M)config_files:#*/completion.sh}
+#do
+#  source $file
+# done
 
 unset config_files
 
@@ -176,3 +176,12 @@ unset config_files
 #zle -N down-line-or-beginning-search
 #bindkey "^[[A" up-line-or-beginning-search # Up
 #bindkey "^[[B" down-line-or-beginning-search # Down
+
+
+# ##################################################
+# NVM
+# ##################################################
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
