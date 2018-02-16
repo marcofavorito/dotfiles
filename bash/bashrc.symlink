@@ -169,7 +169,7 @@ fi
 #unset config_files
 
 #load the path files
-for file in $(find $ZSH -maxdepth 2 -name env.sh -or -name path.sh)
+for file in $(find $ZSH -maxdepth 2 -name env.sh -or -name path.sh -or -name completion.sh)
 do
   source $file
 done
@@ -194,3 +194,9 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+# Yavide alias
+alias yavide="gvim --servername yavide -f -N -u /home/marcofavorito/Programs/yavide/yavide/.vimrc"
+# Yavide alias
+alias yavide="gvim --servername yavide -f -N -u /home/marcofavorito/Programs/yavide/yavide/.vimrc"
+# Yavide alias
+alias yavide="gvim --servername yavide -f -N -u /home/marcofavorito/Programs/yavide/yavide/.vimrc"
