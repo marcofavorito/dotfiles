@@ -1,4 +1,2 @@
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$HOME_PROGRAMS/boost_1_66_0/lib
-export LIBRARY_PATH=$LIBRARY_PATH:$HOME_PROGRAMS/boost_1_66_0/lib
-
-
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib
+export LIBRARY_PATH=$LIBRARY_PATH:/usr/local/lib
