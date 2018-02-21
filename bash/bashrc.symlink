@@ -169,7 +169,7 @@ fi
 #unset config_files
 
 #load the path files
-for file in $(find $ZSH -maxdepth 2 -name env.sh -or -name path.sh -or -name completion.sh)
+for file in $(find $ZSH -maxdepth 2 -name env.sh -or -name path.sh -or -name completion.sh -or -name alias.sh)
 do
   source $file
 done

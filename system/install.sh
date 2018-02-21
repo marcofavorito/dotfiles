@@ -9,3 +9,9 @@ sudo apt-get install -y git vim default-jdk apcalc nmap curl
 #sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-5 90
 
 
+
+
+
+# productivity
+sudo apt-get -y install texstudio texlive-latex-extra texlive-bibtex-extra biber
+sudo apt-get -y install cookiecutter
