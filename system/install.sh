@@ -14,4 +14,4 @@ sudo apt-get install -y git vim default-jdk apcalc nmap curl
 
 # productivity
 sudo apt-get -y install texstudio texlive-latex-extra texlive-bibtex-extra biber
-sudo apt-get -y install cookiecutter
+sudo apt-get -y install cookiecutter travis

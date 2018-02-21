@@ -1,0 +1,4 @@
+sudo apt-get install libsqlcipher-dev
+
+git clone https://github.com/tasdikrahman/tnote $ZSH/tnote/tnote
+cd tnote && pip install -r requirements.txt
