@@ -3,8 +3,7 @@ sudo apt-get update
 sudo apt-get -y upgrade
 python3 -V
 sudo apt-get install -y python3-pip
-sudo apt-get install -y build-essential libssl-dev libffi-dev python-dev python-setuptools
-
+sudo apt-get install -y build-essential libssl-dev libffi-dev python-dev python-setuptools virtualenvwrapper
 # set up virtual envs
 sudo apt-get install -y python3-venv
 

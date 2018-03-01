@@ -33,5 +33,7 @@
         default = simple
 [user]
 	signingkey = 1B17E9636D21C8BF
+	name = Marco Favorito
+	email = marco.favorito@gmail.com
 [gpg]
 	program = /usr/bin/gpg2
