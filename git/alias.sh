@@ -6,3 +6,4 @@ alias gh="git log --pretty=format:\"%Cgreen%h%Creset %Cblue%ad%Creset %s%C(yello
 alias gc="git checkout"
 alias gs="git status"
 alias gits="git commit -S -m $1"
+alias gpom="git push origin master"
