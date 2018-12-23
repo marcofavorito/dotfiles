@@ -1,8 +1,7 @@
 export OS="linux"
 export ARCH="amd64"
-export HOME_PROGRAMS=$HOME/Programs
-export PROJECTS_FOLDER="$HOME/Workfolder"
+export ARCH_ALT="x86_64"
+export WORKFOLDER="$HOME/workfolder"
 
-export DISTRO_VERSION="xenial"
-#export DISTRO_VERSION="zesty"
+export DISTRO_VERSION=$(lsb_release -sc)
 

@@ -1,23 +1,8 @@
-execute pathogen#infect()
-" to add plugins: git submodule add git@source/pluginname.git bundle/pluginname
-
 syntax on
-
-" Wrap gitcommit file types at the appropriate length
-filetype indent plugin on
-
-" look at http://marcgg.com/blog/2016/03/01/vimrc-example/
-
-" colorscheme Tomorrow-Night
-" set guifont=Menlo\ Regular:h18
-" set lines=35 columns=150
 
 set colorcolumn=90
 
 set number
-
-" let mapleader=" "
-map <leader>s :source ~/.vimrc<CR>
 
 set hidden
 set history=100
@@ -31,10 +16,7 @@ set expandtab
 set smartindent
 set autoindent
 
-" autocmd BufWritePre * :%s/\s\+$//e
-
 "When running a search, get Vim to highlight found words:
-
 set hlsearch
 
 "Ability to cancel a search with Escape:
@@ -43,11 +25,6 @@ set hlsearch
 " show matching parenthesis
 set showmatch
 
-
-" Ability to cancel a search with Escape
-" nnoremap <silent> <Esc> :nohlsearch<Bar>:echo<CR>
-
-
 " use arrows
 " map <D-A-RIGHT> <C-w>l
 " map <D-A-LEFT> <C-w>h
@@ -55,105 +32,8 @@ set showmatch
 " map <D-A-UP> <C-w>W
 nnoremap <Leader><Leader> :e#<CR>
 
-
 "split navigations
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
-
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Plugin configurations
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-"""""""""""""""""""""""""""""""""""""""""
-" Command-T
-" Fast file navigation for VIM
-" https://github.com/wincent/command-t
-"""""""""""""""""""""""""""""""""""""""""
-set wildignore+=*.log,*.sql,*.cache
-
-"When you create a new file, it’s not indexed by default. Here a way to reindex everything by simply pressing <Leader>+r:
-noremap <Leader>r :CommandTFlush<CR>
-
-"""""""""""""""""""""""""""""""""""""""""
-" NerdTree
-" A tree explorer plugin for vim.
-" https://github.com/scrooloose/nerdtree
-"""""""""""""""""""""""""""""""""""""""""
-" Hit the right arrow to open a node:
-
-let NERDTreeMapActivateNode='<right>'
-
-"Display hidden files:
-
-let NERDTreeShowHidden=1
-
-"Toggle display of the tree with <Leader> + n:
-
-nmap <leader>n :NERDTreeToggle<CR>
-
-"Locate the focused file in the tree with <Leader> + j:
-
-nmap <leader>j :NERDTreeFind<CR>
-
-" Always open the tree when booting Vim, but don’t focus it:
-
-autocmd VimEnter * NERDTree
-autocmd VimEnter * wincmd p
-
-" Do not display some useless files in the tree:
-
-let NERDTreeIgnore=['\.DS_Store', '\~$', '\.swp']
-
-"""""""""""""""""""""""""""""""""""""""
-" lightline.vim 
-" A light and configurable statusline/tabline plugin for Vim
-" https://github.com/itchyny/lightline.vim
-"""""""""""""""""""""""""""""""""""""""
-set laststatus=2
-
-
-"""""""""""""""""""""""""""""""""""""""
-" nerdcommenter
-" Vim plugin for intensely orgasmic commenting
-" https://github.com/scrooloose/nerdcommenter
-"""""""""""""""""""""""""""""""""""""""
-" Add spaces after comment delimiters by default
-let g:NERDSpaceDelims = 1
-
-" Use compact syntax for prettified multi-line comments
-let g:NERDCompactSexyComs = 1
-
-" Align line-wise comment delimiters flush left instead of following code indentation
-let g:NERDDefaultAlign = 'left'
-
-" Set a language to use its alternate delimiters by default
-let g:NERDAltDelims_java = 1
-
-" Add your own custom formats or override the defaults
-let g:NERDCustomDelimiters = { 'c': { 'left': '/**','right': '*/' } }
-
-" Allow commenting and inverting empty lines (useful when commenting a region)
-let g:NERDCommentEmptyLines = 1
-
-" Enable trimming of trailing whitespace when uncommenting
-let g:NERDTrimTrailingWhitespace = 1
-
-
-
-"""""""""""""""""""""""""""""""""""""""""""""""
-" Syntastic
-" Syntax checking hacks for vim
-" https://github.com/vim-syntastic/syntastic
-""""""""""""""""""""""""""""""""""""""""""""""""
-
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0

@@ -9,6 +9,10 @@
         wtf     = !$ZSH/bin/git-wtf
         rank-contributors = !$ZSH/bin/git-rank-contributors
         count   = !git shortlog -sn
+	pullall = "!f(){ git pull \"$@\" && git submodule sync --recursive && git submodule update --init --recursive; }; f"
+	syncUpdate = "!f(){ git submodule sync --recursive && git submodule update --init --recursive; }; f"
+	logg = "!f(){ git log --graph --stat --decorate=full --color --word-diff=color -M -C --find-copies-harder -l100 --histogram \"$@\"; }; f"
+	oldest-ancestor = !zsh -c 'diff --old-line-format= --new-line-format= <(git rev-list --first-parent \"${1:-master}\") <(git rev-list --first-parent \"${2:-HEAD}\") | head -1' -
 [color]
         diff = auto
         status = auto
