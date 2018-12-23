@@ -1,4 +1,5 @@
 [user]
+        signingkey = 1B17E9636D21C8BF
         name = MarcoFavorito
         email = marco.favorito@gmail.com
 [credential]
