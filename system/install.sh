@@ -6,4 +6,5 @@ sudo apt-get install -y git &&\
 sudo apt-get install -y vim &&\
 sudo apt-get install -y apcalc &&\
 sudo apt-get install -y nmap &&\
-sudo apt-get install -y curl
+sudo apt-get install -y curl &&\
+sudo apt-get install -y gnupg2

@@ -13,17 +13,20 @@ fi
 #typeset -u config_files
 #config_files=($ZSH/**/*.sh)
 #echo $config_files
+
 # load the path files
 #for file in ${(M)config_files:#*/path.sh}
-#do
-#  source $file
-#done
+for file in $(find $ZSH/ -maxdepth 2 -name path.sh)
+do
+  source $file
+done
 
 # load everything but the path and completion files
 #for file in ${${config_files:#*/path.sh}:#*/completion.sh}
-#do
-#  source $file
-#done
+for file in $(find $ZSH/ -maxdepth 2 -name env.sh -or -name alias.sh)
+do
+  source $file
+done
 
 # initialize autocomplete here, otherwise functions won't be loaded
 #autoload -U compinit
@@ -31,19 +34,10 @@ fi
 
 # load every completion after autocomplete loads
 #for file in ${(M)config_files:#*/completion.sh}
-#do
-#  source $file
-# done
-
-#unset config_files
-
-#load the path files
-for file in $(find $ZSH/ -maxdepth 2 -name env.sh -or -name path.sh -or -name completion.sh -or -name alias.sh)
+for file in $(find $ZSH/ -maxdepth 2 -name completion.sh)
 do
-  echo "source $file"
   source $file
-done
-
+ done
 
 
 # Better history
