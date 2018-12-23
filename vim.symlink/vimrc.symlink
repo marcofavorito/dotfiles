@@ -25,11 +25,21 @@ set hlsearch
 " show matching parenthesis
 set showmatch
 
-" use arrows
+" DO NOT use arrows
+" life's hard
 " map <D-A-RIGHT> <C-w>l
 " map <D-A-LEFT> <C-w>h
 " map <D-A-DOWN> <C-w><C-w>
 " map <D-A-UP> <C-w>W
+nnoremap <up> <nop>
+nnoremap <down> <nop>
+nnoremap <left> <nop>
+nnoremap <right> <nop>
+inoremap <up> <nop>
+inoremap <down> <nop>
+inoremap <left> <nop>
+inoremap <right> <nop> 
+
 nnoremap <Leader><Leader> :e#<CR>
 
 "split navigations
