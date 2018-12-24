@@ -4,3 +4,6 @@
         email = marco.favorito@gmail.com
 [credential]
         helper = cache
+[commit]
+	gpgsign = true
+
