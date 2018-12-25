@@ -58,8 +58,6 @@ ENV LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib:/usr/lib
 
 USER default
 
-COPY home/* /home/default/
-
 WORKDIR /build
 ENTRYPOINT []
 
