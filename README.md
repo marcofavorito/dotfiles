@@ -7,7 +7,7 @@ There's a few special files in the hierarchy.
 
 - `bin/`: Anything in bin/ will get added to your $PATH and be made available everywhere.
 - `scripts/`: scripts to manage the setup of the dotfiles and the environment.
-- `docker-images/`: Dockerfiles for useful Docker images.
+- `docker/`: Dockerfiles for useful Docker images.
 - `topic/*.sh`: Any files ending in .sh get loaded into your environment.
 - `topic/path.sh`: Any file named path.sh is loaded first and is expected to setup $PATH 
    or similar.
