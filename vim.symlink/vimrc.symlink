@@ -48,9 +48,13 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
+""""""""""""""""""""""""""""""""""""""""""""""""""
+" tabs stuff
 " change tab
 map <C-t><up> :tabr<cr>
 map <C-t><down> :tabl<cr>
 map <C-t><left> :tabp<cr>
 map <C-t><right> :tabn<cr>
+
+""""""""""""""""""""""""""""""""""""""""""""""""""
 
