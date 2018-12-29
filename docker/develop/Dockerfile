@@ -6,15 +6,16 @@ RUN apt-get update && \
     apt-get install -y dialog && \
     apt-get install -y apt-utils && \
     apt-get upgrade -y && \
+    apt-get install -y sudo &&\
     apt-get install -y clang && \
     apt-get install -y gcc && \
     apt-get install -y g++ && \
     apt-get install -y gdb && \
+    apt-get install -y libstdc++8-doc
     apt-get install -y clang-tidy && \
     apt-get install -y clang-format && \
     apt-get install -y cmake-curses-gui && \
     apt-get install -y llvm && \
-    apt-get install -y sudo
 
 # This adds the `default` user in to sudoers with full privileges:
 RUN HOME=/home/default && \
