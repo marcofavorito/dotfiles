@@ -158,7 +158,7 @@ append_to_bashrc () {
 
 setup_gitconfig
 install_dotfiles
-install_dependencies
+#install_dependencies
 append_to_bashrc
 
 echo ''
