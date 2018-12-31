@@ -2,10 +2,20 @@ FROM ubuntu:18.04
 
 USER root
 
+RUN yes | unminimize
+
 RUN apt-get update && \
     apt-get install -y dialog && \
     apt-get install -y apt-utils && \
-    apt-get upgrade -y && \
+    apt-get upgrade -y
+
+RUN apt-get install -y man-db &&\
+    rm -r /var/lib/apt/lists/*
+    
+RUN apt-get update &&\
+    apt-get install -y build-essential &&\
+    apt-get install -y aptitude &&\
+    apt-get install -y sudo &&\
     apt-get install -y clang && \
     apt-get install -y gcc && \
     apt-get install -y g++ && \
@@ -13,8 +23,7 @@ RUN apt-get update && \
     apt-get install -y clang-tidy && \
     apt-get install -y clang-format && \
     apt-get install -y cmake-curses-gui && \
-    apt-get install -y llvm && \
-    apt-get install -y sudo
+    apt-get install -y llvm 
 
 # This adds the `default` user in to sudoers with full privileges:
 RUN HOME=/home/default && \
@@ -58,10 +67,21 @@ RUN apt-get install -y libboost-all-dev=1.65.1.0ubuntu1 && \
 
 RUN apt-get install -y default-jre &&\
     apt-get install -y default-jdk
+   
+RUN cp /root/.bashrc /home/default/ &&\
+    chown -R default:default /home/default/.bashrc &&\
+    chmod 775 -R /home/default/.bashrc
 
 ENV LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib:/usr/lib
 
 USER default
+
+
+RUN git clone --recursive https://github.com/MarcoFavorito/dotfiles.git \
+        /home/default/.dotfiles &&\
+    /home/default/.dotfiles/script/bootstrap
+
+
 
 WORKDIR /build
 ENTRYPOINT []

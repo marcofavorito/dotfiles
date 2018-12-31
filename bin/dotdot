@@ -49,3 +49,4 @@ export ZSH=$HOME/.dotfiles
 # Install software
 echo "› $ZSH/script/install"
 $ZSH/script/install
+
