@@ -58,3 +58,12 @@ map <C-t><right> :tabn<cr>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
 
+
+""""""""""""""""""""""""""""""""""""""""""""""""""
+" python stuff
+
+" add self as first parameter of a function. 
+" cursor at the beginning of func name.
+let P = 'f(aself, '
+
+""""""""""""""""""""""""""""""""""""""""""""""""""
