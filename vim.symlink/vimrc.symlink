@@ -58,6 +58,8 @@ map <C-t><right> :tabn<cr>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
 
+"To clear the last used search pattern:
+nnoremap <F3> :let @/ = ""<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " python stuff
@@ -65,5 +67,17 @@ map <C-t><right> :tabn<cr>
 " add self as first parameter of a function. 
 " cursor at the beginning of func name.
 let P = 'f(aself, '
+
+""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""
+" Templates
+
+if has("autocmd")
+  augroup templates
+    autocmd BufNewFile *.sh 0r ./templates/bash_script.sh
+  augroup END
+endif
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
