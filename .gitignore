@@ -1,3 +1,8 @@
 .temp
 temp_*
 *__pycache__*
+
+*.swp
+
+*.netrwhist
+
