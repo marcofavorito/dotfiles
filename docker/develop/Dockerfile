@@ -67,6 +67,8 @@ RUN apt-get install -y libboost-all-dev=1.65.1.0ubuntu1 && \
 
 RUN apt-get install -y default-jre &&\
     apt-get install -y default-jdk
+
+RUN apt-get install -y dotnet-sdk
    
 RUN cp /root/.bashrc /home/default/ &&\
     chown -R default:default /home/default/.bashrc &&\
