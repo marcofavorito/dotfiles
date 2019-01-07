@@ -11,7 +11,7 @@ RUN apt-get update && \
 
 RUN apt-get install -y man-db &&\
     rm -r /var/lib/apt/lists/*
-    
+
 RUN apt-get update &&\
     apt-get install -y build-essential &&\
     apt-get install -y aptitude &&\
@@ -87,5 +87,4 @@ RUN git clone --recursive https://github.com/MarcoFavorito/dotfiles.git \
 
 WORKDIR /build
 ENTRYPOINT []
-
 
