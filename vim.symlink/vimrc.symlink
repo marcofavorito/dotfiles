@@ -78,14 +78,15 @@ nmap <leader>bq :bp <BAR> bd #<CR>
 " Show all open buffers and their status
 nmap <leader>bl :ls<CR>
 
-" Change buffer
+" Switch buffer
 set switchbuf=usetab
 nnoremap <F8> :sbnext<CR>
 nnoremap <S-F8> :sbprevious<CR>
 
+" Change buffer with CTRL
+nnoremap <C-n> :bnext<CR>
+nnoremap <C-p> :bprevious<CR>
 
-
-""""""""""""""""""""""""""""""""""""""""""""""""""
 """"""""""""""""""""""""""""""""""""""""""""""""""
 
 " To clear the last used search pattern:
