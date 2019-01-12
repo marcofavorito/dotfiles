@@ -1,3 +1,10 @@
 # Docker images
 
-- `develop`: general-purpose image for developing.
+- `develop`: general-purpose image for developing. Other images that depends on the 
+             develop image are (the ones named as a programming language)
+    - `cpp`
+    - `csharp`
+    - `common-lisp`
+    - ...
+- `exercism`: a docker image to set up the [Exercism](https://exercism.io) utility.
+- `plantuml`: to use PlantUML.
