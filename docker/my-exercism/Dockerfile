@@ -33,5 +33,5 @@ RUN mkdir exercism && \
     tar -xf exercism-linux-64bit.tgz
 RUN sudo cp /home/default/exercism/exercism /usr/local/bin
 
-RUN exercism configure --token=$EXERCISM_TOKEN --workspace /work
+RUN exercism configure --token=$EXERCISM_TOKEN --workspace /build
 
