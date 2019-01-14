@@ -10,6 +10,8 @@ unbind C-b
 set-option -g prefix C-a
 bind-key C-a send-prefix
 
+# longer status bar message
+set-option -g display-time 20000 
 
 # Cycle panes with C-b C-b
 #unbind ^B
