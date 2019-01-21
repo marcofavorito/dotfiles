@@ -11,10 +11,12 @@ set nowrap
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
-set shiftwidth=2
 set expandtab
 set smartindent
 set autoindent
+
+" https://www.linux.com/news/vim-tips-moving-around-using-marks-and-jumps
+set viminfo='100,f1
 
 "When running a search, get Vim to highlight found words:
 set hlsearch
