@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 # shortcuts for git
 alias ga="git add"
 alias gb="git branch"

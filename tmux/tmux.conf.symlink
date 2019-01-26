@@ -67,5 +67,5 @@ bind l select-pane -R
 # Status bar
 #######################################
 set -g status-right-length 300
-set -g status-right '#[[fg=green][#[fg=black]#(echo $USER) @ #H][#[fg=black]%h %d %Y #[bg=green,fg=black]%H:%M]#[fg=black][CPU=#(tmux-cpu-usage.sh) MEM=#(tmux-mem-usage.sh)]#[default]'
+set -g status-right '#[[fg=green][#[fg=black]#(echo $USER) @ #H][#[fg=black]%h %d %Y #[bg=green,fg=black]%H:%M]#[fg=black][CPU=#(_tmux-cpu-usage.sh) MEM=#(_tmux-mem-usage.sh)]#[default]'
 

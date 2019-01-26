@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+tmux new-window 
+tmux send-keys 'dstat -cdgmnpy --noheaders' C-m
+tmux split-window -h 
+tmux send-keys 'htop' C-m 
+
+
