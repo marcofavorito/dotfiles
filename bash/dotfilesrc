@@ -54,7 +54,7 @@ do
 # start tmux by default
 # https://www.reddit.com/r/tmux/comments/5nj8yi/am_i_nesting_session/
 if [ "$TMUX" == "" ]; then
-    tmux new-session -A -t base 
+    tmux new-session 
 fi
 
 

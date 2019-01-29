@@ -76,6 +76,10 @@ set hidden
 " This replicates the idea of closing a tab
 nmap <leader>bq :bp <BAR> bd #<CR>
 
+" another way to close the current buffer
+nmap <leader>q :bp <BAR> bd #<CR>
+
+
 " Show all open buffers and their status
 nmap <leader>bl :ls<CR>
 
