@@ -7,7 +7,7 @@
 # ---------------------------------------------------------------------------
 # This variable defines docker image tag (*WIHOUT* container registry URI prefix).
 # Example: DOCKER_IMAGE_TAG=fetch-ledger-develp:latest
-DOCKER_IMAGE_TAG=misp
+DOCKER_IMAGE_TAG=mips
 
 
 #############################################################################
