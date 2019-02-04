@@ -1,3 +1,6 @@
 [submodule "docker/docker-images"]
 	path = docker/docker-images
 	url = https://github.com/uvue-git/docker-images.git
+[submodule "pyenv/pyenv.symlink"]
+	path = pyenv/pyenv.symlink
+	url = https://github.com/yyuu/pyenv.git

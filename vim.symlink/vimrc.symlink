@@ -77,7 +77,7 @@ set hidden
 nmap <leader>bq :bp <BAR> bd #<CR>
 
 " another way to close the current buffer
-nmap <leader>q :bp <BAR> bd #<CR>
+nmap <leader>q  :bp <BAR> bd #<CR>
 
 
 " Show all open buffers and their status
@@ -129,9 +129,22 @@ endif
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " Misc
 
+" To delete without copying
 nnoremap <leader>d "_d
 xnoremap <leader>d "_d
 xnoremap <leader>p "_dP
+
+"https://stackoverflow.com/a/1676672/7150172
+" Commenting blocks of code.
+autocmd FileType c,cpp,java,scala let b:comment_leader = '// '
+autocmd FileType sh,ruby,python   let b:comment_leader = '# '
+autocmd FileType conf,fstab       let b:comment_leader = '# '
+autocmd FileType tex              let b:comment_leader = '% '
+autocmd FileType mail             let b:comment_leader = '> '
+autocmd FileType vim              let b:comment_leader = '" '
+noremap <silent> ,cc :<C-B>silent <C-E>s/^/<C-R>=escape(b:comment_leader,'\/')<CR>/<CR>:nohlsearch<CR>
+noremap <silent> ,cu :<C-B>silent <C-E>s/^\V<C-R>=escape(b:comment_leader,'\/')<CR>//e<CR>:nohlsearch<CR>
+""""""""""""""""""""""""""""""""""""""""""""""""""
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
 """"""""""""""""""""""""""""""""""""""""""""""""""
