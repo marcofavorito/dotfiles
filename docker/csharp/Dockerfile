@@ -1,6 +1,4 @@
-FROM exercism:latest
-
-
+FROM develop:latest
 
 RUN wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.asc.gpg &&\
     sudo mv microsoft.asc.gpg /etc/apt/trusted.gpg.d/ &&\
