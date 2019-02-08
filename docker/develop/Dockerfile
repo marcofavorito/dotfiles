@@ -45,6 +45,7 @@ RUN apt-get update &&\
     apt-get install -y make && \
     apt-get install -y cmake && \
     apt-get install -y git && \
+    apt-get install -y tmux &&\
     apt-get install -y libssl-dev && \
     apt-get install -y python-pip && \
     apt-get install -y python3-pip && \
@@ -81,8 +82,7 @@ RUN git clone --recursive https://github.com/MarcoFavorito/dotfiles.git \
         /home/default/.dotfiles &&\
     /home/default/.dotfiles/script/bootstrap
 
+WORKDIR /home/default 
 
-
-WORKDIR /build
 ENTRYPOINT []
 
