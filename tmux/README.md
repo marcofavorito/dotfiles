@@ -9,4 +9,5 @@ Useful links:
 - [A Gentle Introduction to tmux](https://hackernoon.com/a-gentle-introduction-to-tmux-8d784c404340)
 - [A minimalistic guide to tmux](https://medium.com/actualize-network/a-minimalist-guide-to-tmux-13675fb160fa)
 - [How to Use Vim and Tmux Together](https://www.slothparadise.com/how-to-use-vim-and-tmux-together-workflow-for-beginners/)
+- [The best and greatest tmux.conf ever](https://gist.github.com/spicycode/1229612)
 
