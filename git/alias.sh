@@ -11,6 +11,7 @@ alias gpo="git push origin"
 alias gpom="git push origin master"
 alias gpod="git push origin develop"
 alias gpll="git pull origin master"
+alias gclo="git clone --recursive"
 
 git config --global alias.pullall '!f(){ git pull "$@" && git submodule sync --recursive && git submodule update --init --recursive; }; f'
 git config --global alias.syncUpdate '!f(){ git submodule sync --recursive && git submodule update --init --recursive; }; f'
