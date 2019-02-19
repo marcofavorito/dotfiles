@@ -13,5 +13,5 @@ java -jar /home/default/plantuml.jar "$@"' | sudo tee /usr/local/bin/plantuml
 
 RUN sudo chmod +x /usr/local/bin/plantuml
 
-COPY home/* /home/default
+COPY home/* /home/default/
 
