@@ -152,8 +152,8 @@ install_dependencies () {
 append_to_bashrc () {
   info "append 'source' line to .bashrc" 
   echo "$DOTFILES_ROOT"
-  grep -q -F 'source "$HOME/.dotfiles/bash/dotfilesrc.sh"' ~/.bashrc ||\
-     echo 'source "$HOME/.dotfiles/bash/dotfilesrc.sh"' >> ~/.bashrc
+  grep -q -F 'source "$HOME/.dotfiles/bash/dotfilesrc"' ~/.bashrc ||\
+     echo 'source "$HOME/.dotfiles/bash/dotfilesrc"' >> ~/.bashrc
 
 }
 

@@ -4,3 +4,6 @@
 [submodule "pyenv/pyenv.symlink"]
 	path = pyenv/pyenv.symlink
 	url = https://github.com/yyuu/pyenv.git
+[submodule "third_party/rmtrash"]
+	path = third_party/rmtrash
+	url = git@github.com:PhrozenByte/rmtrash.git

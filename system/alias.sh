@@ -7,3 +7,7 @@ function getPod() {
     kubectl get pods | grep $1 | cut -d' ' -f1 
 }
 
+
+# REPLACE rm wit rmtrash
+alias rm='rmtrash'
+alias rmdir='rmdirtrash'
