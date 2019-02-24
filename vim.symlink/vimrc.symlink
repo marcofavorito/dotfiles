@@ -117,6 +117,7 @@ if has("autocmd")
   augroup templates
     autocmd BufNewFile *.sh 0r ~/.vim/templates/bash_script.sh
     autocmd BufNewFile *.h  0r ~/.vim/templates/header.h
+    autocmd BufNewFile MIT_LICENSE  0r ~/.vim/templates/MIT_LICENSE
   augroup END
 endif
 
