@@ -40,10 +40,21 @@ GRUB_CMDLINE_LINUX_DEFAULT="acpi_osi="
 http://irtfweb.ifa.hawaii.edu/~lockhart/gpg/
 
 
-gpg --import public.key
-gpg --allow-secret-key-import --import private.key
-gpg --list-secret-keys --keyid-format LONG
-git config --global user.signingkey <long>
+    gpg --import public.key
+    gpg --allow-secret-key-import --import private.key
+    gpg --list-secret-keys --keyid-format LONG
+
+- take e.g. the `3AA...` from ``sec   4096R/3AA5C34371567BD2 2016-03-10 [expires: 2017-03-10]`
+
+    git config --global user.signingkey <long>
+
+to print the public key in ASCII format
+
+    gpg --armor --export 3AA5C34371567BD2
+
+references:
+- https://help.github.com/en/articles/telling-git-about-your-signing-key
+- https://help.github.com/en/articles/generating-a-new-gpg-key
 
 ---
 
@@ -52,3 +63,11 @@ https://docs.docker.com/install/linux/linux-postinstall/#manage-docker-as-a-non-
 
 ---
 
+Configure ssh
+
+- copy pb/pv key in .ssh
+- do `eval "$(ssh-agent -s)"
+- `ssh-add ~/.ssh/id_rsa`
+- change permission if needed: `chmod 400 ~/.ssh/id_rsa`
+
+---
