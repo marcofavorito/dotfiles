@@ -22,7 +22,9 @@ bind-key r source-file ~/.tmux.conf \; display "Config reloaded!"
 
 
 # Mouse works as expected
-set-option -g mouse on
+set-option mouse on
+# Add shortcut to switch between mouse on/off mode.
+bind / set-option mouse off
 
 # Scrolling works as expected
 set -g terminal-overrides 'xterm*:smcup@:rmcup@'
