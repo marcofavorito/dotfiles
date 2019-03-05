@@ -24,6 +24,7 @@ RUN echo "eval `opam config env`" >> ~/.bashrc
 RUN opam install core utop
 RUN opam install base core_kernel ounit 
 #RUN opam install async yojson core_extended core_bench cohttp async_graphics cryptokit menhir
+# merlin dune ocp-indent
 
 RUN echo $'#use "topfind";;\n\
 \#thread;;\n\
