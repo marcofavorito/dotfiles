@@ -8,3 +8,11 @@
     - ...
 - `exercism`: a docker image to set up the [Exercism](https://exercism.io) utility.
 - `plantuml`: to use PlantUML.
+
+## Links
+
+- [LibreOffice docker image](https://hub.docker.com/r/woahbase/alpine-libreoffice/)
+
+
+
+
