@@ -17,3 +17,9 @@ alias var="awk '{total+=\$1 ; sq+=\$1*\$1 ; }END{ print sq/NR-(total/NR)**2 ; }'
 alias rm='rmtrash'
 alias rmdir='rmdirtrash'
 
+# my disk usage
+alias mydu='du --block-size=B --max-depth=1'
+
+# do 'git status' in every subdirectory
+alias gsall='for i in $(ls); do echo $i; cd $i; git status; cd ..; done;'
+
