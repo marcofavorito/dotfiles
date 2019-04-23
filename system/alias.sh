@@ -18,7 +18,7 @@ alias rm='rmtrash'
 alias rmdir='rmdirtrash'
 
 # my disk usage
-alias mydu='du --block-size=B --max-depth=1'
+alias mydu='du --block-size=M --max-depth=1'
 
 # do 'git status' in every subdirectory
 alias gsall='for i in $(ls); do echo $i; cd $i; git status; cd ..; done;'

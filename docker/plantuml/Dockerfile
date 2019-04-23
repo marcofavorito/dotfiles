@@ -8,10 +8,10 @@ RUN sudo pip install Sphinx
 RUN sudo pip install sphinxcontrib-plantuml
 RUN sudo pip install Pillow
 
-RUN echo '#!/bin/bash -e \n\
-java -jar /home/default/plantuml.jar "$@"' | sudo tee /usr/local/bin/plantuml 
+#RUN echo '#!/bin/bash -e \n\
+#java -jar /home/default/plantuml.jar "$@"' | sudo tee /usr/local/bin/plantuml 
+#RUN sudo chmod +x /usr/local/bin/plantuml
+#COPY home/* /home/default/
 
-RUN sudo chmod +x /usr/local/bin/plantuml
-
-COPY home/* /home/default/
+RUN sudo apt install plantuml
 
