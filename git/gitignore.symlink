@@ -2,3 +2,7 @@
 *~
 *.swp
 *.swo
+.idea
+.vscode
+ignore/
+
