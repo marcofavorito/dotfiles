@@ -23,3 +23,6 @@ alias mydu='du --block-size=M --max-depth=1'
 # do 'git status' in every subdirectory
 alias gsall='for i in $(ls); do echo $i; cd $i; git status; cd ..; done;'
 
+alias dcb='docker-compose build'
+alias dcu='docker-compose up'
+
