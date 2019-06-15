@@ -19,6 +19,6 @@ sudo apt-get install -y vagrant
 sudo apt-get install -y console-common
 sudo apt-get install -y xclip
 sudo apt-get install -y googler
+sudo googler --upgrade
 sudo apt-get install -y w3m
-
 
