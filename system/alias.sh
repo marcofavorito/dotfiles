@@ -26,3 +26,8 @@ alias gsall='for i in $(ls); do echo $i; cd $i; git status; cd ..; done;'
 alias dcb='docker-compose build'
 alias dcu='docker-compose up'
 
+
+# enable vlc telnet interface
+alias mmm="vlc --vout none --intf telnet --telnet-password admin --lua-config \"telnet={host='0.0.0.0:4212'}\""
+alias vlcclient="vlcclient.py localhost:4212"
+

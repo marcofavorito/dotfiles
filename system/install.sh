@@ -21,4 +21,6 @@ sudo apt-get install -y xclip
 sudo apt-get install -y googler
 sudo googler --upgrade
 sudo apt-get install -y w3m
+sudo apt install -y vlc
+sudo pip3 install -U youtube-dl
 
