@@ -16,6 +16,7 @@ sudo apt-get install -y virtualbox &&\
 sudo apt-get install -y vagrant 
 
 # utils
+sudo apt-get install -y console-common
 sudo apt-get install -y xclip
 sudo apt-get install -y googler
 sudo apt-get install -y w3m
