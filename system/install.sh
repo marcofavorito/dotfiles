@@ -22,5 +22,6 @@ sudo apt-get install -y googler
 sudo googler --upgrade
 sudo apt-get install -y w3m
 sudo apt install -y vlc
+sudo pip3 install -U git+https://github.com/marcofavorito/py-vlcclient.git#egg=vlcclient
 sudo pip3 install -U youtube-dl
 
