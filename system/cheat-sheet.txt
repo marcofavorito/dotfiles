@@ -37,6 +37,22 @@ GRUB_CMDLINE_LINUX_DEFAULT="acpi_osi="
 
 ---
 
+
+## how to boot in textmode 
+
+
+edit /etc/default/grub
+
+# Stops the ubuntu purple screen
+#GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"
+
+# Uncomment to disable graphical terminal (grub-pc only) 
+GRUB_TERMINAL=console
+
+
+sudo update-grub
+
+
 ## GPG
 
 http://irtfweb.ifa.hawaii.edu/~lockhart/gpg/
