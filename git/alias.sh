@@ -18,3 +18,7 @@ git config --global alias.syncUpdate '!f(){ git submodule sync --recursive && gi
 git config --global alias.logg '!f(){ git log --graph --stat --decorate=full --color --word-diff=color -M -C --find-copies-harder -l100 --histogram "$@"; }; f'
 git config --global alias.oldest-ancestor $'!zsh -c \'diff --old-line-format= --new-line-format= <(git rev-list --first-parent \"${1:-master}\") <(git rev-list --first-parent \"${2:-HEAD}\") | head -1\' -'
 
+function cloneAllFromUser(){
+    curl https://api.github.com/users/$2/repos?token=$1 | jq .[].ssh_url | xargs -I{} -P10 git clone --recursive {}
+}
+
