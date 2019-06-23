@@ -1,0 +1,14 @@
+[distutils]
+index-servers=
+    pypi
+    testpypi
+
+[pypi]
+username: marcofavorito
+#password: xxxxxxxxxxxxxxxx
+
+[testpypi]
+repository: https://test.pypi.org/legacy/
+username: marcofavorito 
+#password: yyyyyyyyyyyyyyyy
+
