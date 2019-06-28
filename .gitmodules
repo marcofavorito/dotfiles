@@ -9,4 +9,4 @@
 	url = https://github.com/PhrozenByte/rmtrash.git
 [submodule "third_party/py-vlcclient"]
 	path = third_party/py-vlcclient
-	url = git@github.com:DerMitch/py-vlcclient.git
+	url = git@github.com:marcofavorito/py-vlcclient.git
