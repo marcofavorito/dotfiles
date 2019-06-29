@@ -221,7 +221,6 @@ git diff origin..master > my.patch  # pipes a diff into my.patch
 git diff --stat HEAD
 
 
-
 ### Submodule
 
 (from https://gist.github.com/myusuf3/7f645819ded92bda6677)
@@ -236,6 +235,13 @@ To remove a submodule you need to:
 - Delete the now untracked submodule files rm -rf path_to_submodule
 
 
+### Duplicate a repo
+
+https://help.github.com/en/articles/duplicating-a-repository
+
+git clone --bare https://github.com/exampleuser/old-repository.git
+cd old-repository.git
+git push --mirror https://github.com/exampleuser/new-repository.git
 
 ## Generic Help
 
