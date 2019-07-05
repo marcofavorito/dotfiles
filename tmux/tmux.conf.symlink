@@ -20,11 +20,14 @@ set-option -g display-time 20000
 # Reload config with a key
 bind-key r source-file ~/.tmux.conf \; display "Config reloaded!"
 
+# increase history buffer
+set-option -g history-limit 10000
 
 # Mouse works as expected
 set-option -g mouse on
 # Add shortcut to switch between mouse on/off mode.
 bind / set-option mouse off
+bind > set-option mouse on
 
 # Scrolling works as expected
 set -g terminal-overrides 'xterm*:smcup@:rmcup@'
