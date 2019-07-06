@@ -9,3 +9,5 @@ temp_*
 *.mp3
 *.mp4
 
+system/secrets.sh
+
