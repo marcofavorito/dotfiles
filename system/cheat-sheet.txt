@@ -243,6 +243,12 @@ git clone --bare https://github.com/exampleuser/old-repository.git
 cd old-repository.git
 git push --mirror https://github.com/exampleuser/new-repository.git
 
+
+### Assume tracked file unchanged and undo
+
+git update-index --assume-unchanged file
+git update-index --no-assume-unchanged [<file> ...]
+
 ## Generic Help
 
 man <cmd>
