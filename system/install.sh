@@ -4,7 +4,8 @@ sudo apt-get dist-upgrade -y
 
 # OS monitoring
 sudo apt-get install -y htop &&\
-sudo apt-get install -y dstat
+sudo apt-get install -y dstat &&\
+sudo apt-get install -y nethogs
 
 sudo apt-get install -y git &&\
 sudo apt-get install -y vim &&\
