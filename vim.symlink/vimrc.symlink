@@ -52,6 +52,19 @@ nnoremap <C-H> <C-W><C-H>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
 """"""""""""""""""""""""""""""""""""""""""""""""""
+" misc
+" paste-nopaste switcher
+
+set pastetoggle=<F2>
+
+" list on / list off switcher
+
+
+nnoremap <F4> :set list!<CR>
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""
 " tabs stuff
 " change tab
 map <leader>h :tabp<cr>
