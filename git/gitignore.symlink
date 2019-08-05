@@ -4,5 +4,5 @@
 *.swo
 .idea
 .vscode
-ignore/
+/tags
 
