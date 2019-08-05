@@ -10,3 +10,6 @@
 [submodule "third_party/py-vlcclient"]
 	path = third_party/py-vlcclient
 	url = git@github.com:marcofavorito/py-vlcclient.git
+[submodule "ctags/ctags"]
+	path = ctags/ctags
+	url = https://github.com/universal-ctags/ctags.git
