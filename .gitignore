@@ -10,4 +10,5 @@ temp_*
 *.mp4
 
 system/secrets.sh
+keybase*.deb
 
