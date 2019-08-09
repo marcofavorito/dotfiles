@@ -25,4 +25,6 @@ sudo apt install -y vlc
 sudo pip3 install -U git+https://github.com/marcofavorito/py-vlcclient.git#egg=vlcclient
 sudo pip3 install -U youtube-dl
 sudo apt-get install -y latexmk
+sudo apt-get install -y ruby-full ruby-bundler
+sudo apt-get install -y jekyll
 
