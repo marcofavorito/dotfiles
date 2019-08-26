@@ -38,6 +38,16 @@ GRUB_CMDLINE_LINUX_DEFAULT="acpi_osi="
 ---
 
 
+- set an action for when the lid is closed:
+```
+sudo vim /etc/systemd/logind.conf
+# modify #HandleLidSwitch=suspend with one of poweroff|ignore|hibernate|suspend
+systemctl restart systemd-logind.service
+```
+
+
+---
+
 ## how to boot in textmode 
 
 

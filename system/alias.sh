@@ -34,4 +34,14 @@ alias vlcclient="vlcclient.py localhost:4212"
 alias evpnc="expressvpn connect smart"
 alias evpnd="expressvpn disconnect"
 
-
+function docker_libreoffice(){
+    docker run --rm -it \
+      --name docker_libreoffice --hostname libreoffice \
+      -e PGID=1000 -e PUID=1000 \
+      -c 512 -m 2096m \
+      -e DISPLAY=unix:0 \
+      -v /usr/share/fonts:/usr/share/fonts:ro \
+      -v data:/home/alpine \
+      -v /tmp/.X11-unix:/tmp/.X11-unix \
+      woahbase/alpine-libreoffice:x86_64
+}
