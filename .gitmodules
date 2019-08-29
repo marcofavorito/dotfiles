@@ -13,3 +13,6 @@
 [submodule "ctags/ctags"]
 	path = ctags/ctags
 	url = https://github.com/universal-ctags/ctags.git
+[submodule "kubectl/kubectx"]
+	path = kubectl/kubectx
+	url = https://github.com/ahmetb/kubectx.git
