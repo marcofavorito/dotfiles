@@ -4,8 +4,8 @@
 alias cclip='xclip -selection clipboard'
 alias copyLastCmd="fc -ln -1 | awk '{\$1=\$1}1' | cclip "
 
-function getPod() {
-    kubectl get pods | grep $1 | cut -d' ' -f1 
+function getpods() {
+    kubectl get pods | tail -n +2 | cut -d' ' -f1 | grep $1 
 }
 
 # useful awks!
