@@ -1,6 +1,6 @@
 syntax on
 
-set colorcolumn=90
+set colorcolumn=72
 
 set number
 
