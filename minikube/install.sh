@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
-curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64 && chmod +x minikube
-sudo install minikube /usr/local/bin
-rm minikube
+_installer_path=${DOTFILES}/minikube/minikube
+curl -Lo $_installer_path https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64 && chmod +x $_installer_path
+sudo install $_installer_path /usr/local/bin
+rm $_installer_path
 

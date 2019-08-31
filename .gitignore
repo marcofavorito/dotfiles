@@ -8,6 +8,7 @@ temp_*
 
 *.mp3
 *.mp4
+*.part
 
 system/secrets.sh
 keybase*.deb
