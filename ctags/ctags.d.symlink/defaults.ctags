@@ -2,4 +2,9 @@
 --recurse=yes
 --tag-relative=yes
 --exclude=.github
+--recurse=yes
+--exclude=vendor/*
+--exclude=node_modules/*
+--exclude=db/*
+--exclude=log/*
 

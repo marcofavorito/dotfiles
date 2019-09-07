@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
-export MYVIMRC="~/.vimrc"
+export VIM_HOME="$HOME/.vim"
 
