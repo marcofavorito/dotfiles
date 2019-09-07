@@ -1,0 +1,16 @@
+{
+  "journals": {
+    "default": {
+      "journal": "/home/marcofavorito/.jrnl/journal",
+      "encrypt": true
+    }
+  },
+  "editor": "vim",
+  "encrypt": true,
+  "default_hour": 9,
+  "default_minute": 0,
+  "timeformat": "%Y-%m-%d %H:%M",
+  "tagsymbols": "@",
+  "highlight": true,
+  "linewrap": 79
+}
