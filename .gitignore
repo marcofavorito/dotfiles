@@ -13,3 +13,5 @@ temp_*
 system/secrets.sh
 keybase*.deb
 
+*.log
+
