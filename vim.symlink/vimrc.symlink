@@ -58,7 +58,7 @@ set pastetoggle=<F2>
 
 " list on / list off switcher
 nnoremap <F4> :set list!<CR>
-
+:set listchars=eol:⏎,tab:␉·,trail:␠,nbsp:⎵
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
 """"""""""""""""""""""""""""""""""""""""""""""""""
@@ -121,6 +121,7 @@ if has("autocmd")
     autocmd BufNewFile *.sh 0r ~/.vim/templates/bash_script.sh
     autocmd BufNewFile *.h  0r ~/.vim/templates/header.h
     autocmd BufNewFile LICENSE_MIT  0r ~/.vim/templates/LICENSE_MIT
+    autocmd BufNewFile LICENSE_APACHE  0r ~/.vim/templates/LICENSE_APACHE
   augroup END
 endif
 
@@ -142,6 +143,12 @@ augroup END
 nnoremap <leader>d "_d
 xnoremap <leader>d "_d
 xnoremap <leader>p "_dP
+
+" To copy to the system clipboard
+noremap <Leader>y "*y
+noremap <Leader>p "*p
+noremap <Leader>Y "+y
+noremap <Leader>P "+p
 
 "https://stackoverflow.com/a/1676672/7150172
 " Commenting blocks of code.
