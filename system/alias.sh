@@ -32,8 +32,10 @@ alias dcu='docker-compose up'
 alias mmm="vlc --vout none --intf telnet --telnet-password admin --lua-config \"telnet={host='0.0.0.0:4212'}\""
 alias vlcclient="vlcclient.py localhost:4212"
 
+alias evpn="expressvpn"
 alias evpnc="expressvpn connect smart"
 alias evpnd="expressvpn disconnect"
+alias evpns="expressvpn status"
 
 function docker_libreoffice(){
     docker run --rm -it \
