@@ -1,0 +1,53 @@
+# Power management
+
+## Thermald
+
+sudo apt install thermald
+
+write on /etc/default/grub
+GRUB_CMDLINE_LINUX_DEFAULT="quiet splash intel_pstate=enable"
+sudo update-grub
+
+then restart and check:
+- cat /sys/devices/system/cpu/cpu*/cpufreq/scaling_driver 
+  
+  should give intel_pstate enabled
+
+
+## Cpower
+
+    sudo apt-get install linux-tools-common linux-tools-generic
+
+    cpupower frequency-info
+
+performance mode:
+
+    sudo cpupower frequency-set -g powersave
+    sudo cpupower frequency-set -g performance
+
+to check:
+
+    cat /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
+
+
+If you want to make the "powersave" governor default in Ubuntu:
+
+    sudo apt-get install cpufrequtils
+
+And then edit the /etc/init.d/cpufrequtils file and change GOVERNOR to "powersave" 
+(GOVERNOR="powersave"). You can do this automatically by using the following command:
+
+    sudo sed -i 's/^GOVERNOR=.*/GOVERNOR="powersave"/' /etc/init.d/cpufrequtils
+
+To revert this change and set the governor back to default
+
+    sudo sed -i 's/^GOVERNOR=.*/GOVERNOR="ondemand"/' /etc/init.d/cpufrequtils
+
+
+## TLP
+
+    sudo add-apt-repository ppa:linrunner/tlp
+    sudo apt-get update 
+    sudo apt-get install tlp tlp-rdw 
+
+
