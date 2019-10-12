@@ -23,6 +23,7 @@ sudo apt-get install -y ruby-full ruby-bundler
 sudo apt-get install -y jekyll
 
 # utils
+sudo apt-get install -y xpdf
 sudo apt-get install -y console-common
 sudo apt-get install -y xclip
 sudo apt-get install -y googler
