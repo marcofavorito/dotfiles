@@ -10,7 +10,7 @@ all: ${PDF}
 	${VIEWER} $@ &
 
 clean:
-	latexmk -c
-	-rm -fr ${PDF} *.bbl *.xdv *.dvi 
+	latexmk -C
+	-rm -fr ${PDF} main.run.xml *.bbl
     
 
