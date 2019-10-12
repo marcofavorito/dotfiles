@@ -14,4 +14,4 @@ system/secrets.sh
 keybase*.deb
 
 *.log
-
+.vagrant
