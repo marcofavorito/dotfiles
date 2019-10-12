@@ -8,3 +8,5 @@ if ! [ -L /var/www ]; then
   ln -fs /vagrant /var/www
 fi
 
+apt-get install texlive-latex-base -y
+apt-get install latexmk
