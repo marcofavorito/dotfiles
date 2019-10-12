@@ -78,9 +78,8 @@ ENV LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib:/usr/lib
 USER default
 
 
-RUN git clone --recursive https://github.com/MarcoFavorito/dotfiles.git \
-        /home/default/.dotfiles &&\
-    /home/default/.dotfiles/script/bootstrap
+RUN git clone --recursive https://github.com/marcofavorito/dotfiles.git /home/default/.dotfiles
+RUN /home/default/.dotfiles/script/bootstrap
 
 WORKDIR /home/default 
 
