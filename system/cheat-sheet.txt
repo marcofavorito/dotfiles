@@ -80,10 +80,34 @@ http://irtfweb.ifa.hawaii.edu/~lockhart/gpg/
 
     gpg --armor --export 3AA5C34371567BD2
 
+- Export from GPG and import in Keybase:
+
+    gpg --export-secret-keys > key.asc
+    keybase pgp import --infile key.asc
+
+- Encrypt message
+
+    gpg --output myfile.txt.gpg --encrypt --recipient marco.favorito@gmail.com myfile.txt
+
+- Sign message:
+
+    shasum -a 256 myfile.txt | awk '{print $1}' >myfile.txt.sha256sum
+    gpg --output myfile.txt.sha256sum.sig --sign myfile.txt.sha256sum
+
+- Decrypt message
+
+    gpg --output myfile.txt --decrypt myfile.txt.gpg
+
+- Verify signature
+
+    gpg --verify myfile.txt.sha256sum.sig
+    # OR
+    gpg --output myfile.txt.sha256sum  --decrypt myfile.txt.sha256sum.sig
+
 references:
 - https://help.github.com/en/articles/telling-git-about-your-signing-key
 - https://help.github.com/en/articles/generating-a-new-gpg-key
-
+- irtfweb.ifa.hawaii.edu/~lockhart/gpg/
 
 ## Docker
 
