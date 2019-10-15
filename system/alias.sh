@@ -37,6 +37,9 @@ alias evpnc="expressvpn connect smart"
 alias evpnd="expressvpn disconnect"
 alias evpns="expressvpn status"
 
+alias myip="curl 'https://api.ipify.org'"
+alias myip6="curl 'https://api6.ipify.org'"
+
 function docker_libreoffice(){
     docker run --rm -it \
       --name docker_libreoffice --hostname libreoffice \
