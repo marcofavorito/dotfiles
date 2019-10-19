@@ -120,6 +120,7 @@ if has("autocmd")
   augroup templates
     autocmd BufNewFile *.sh 0r ~/.vim/templates/bash_script.sh
     autocmd BufNewFile *.h  0r ~/.vim/templates/header.h
+    autocmd BufNewFile *.tex 0r ~/.vim/templates/main.tex
     autocmd BufNewFile LICENSE_MIT  0r ~/.vim/templates/LICENSE_MIT
     autocmd BufNewFile LICENSE_APACHE  0r ~/.vim/templates/LICENSE_APACHE
   augroup END
@@ -130,8 +131,8 @@ endif
 augroup Shebang
   autocmd BufNewFile *.py 0put =\"#!/usr/bin/env python\<nl># -*- coding: utf-8 -*-\<nl>\"|$
   autocmd BufNewFile *.rb 0put =\"#!/usr/bin/env ruby\<nl># -*- coding: None -*-\<nl>\"|$
-  autocmd BufNewFile *.tex 0put =\"%&plain\<nl>\"|$
   autocmd BufNewFile *.\(cc\|hh\) 0put =\"//\<nl>// \".expand(\"<afile>:t\").\" -- \<nl>//\<nl>\"|2|start!
+  "autocmd BufNewFile *.tex 0put =\"%&plain\<nl>\"|$
 augroup END
 
 
