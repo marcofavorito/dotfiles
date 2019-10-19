@@ -21,8 +21,10 @@ sudo pip3 install -U liccheck
 sudo apt-get install -y latexmk
 sudo apt-get install -y ruby-full ruby-bundler
 sudo apt-get install -y jekyll
+sudo apt-get install -y golang
 
 # utils
+sudo snap install slack-term
 sudo apt-get install -y xpdf
 sudo apt-get install -y console-common
 sudo apt-get install -y xclip

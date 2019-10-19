@@ -51,3 +51,5 @@ function docker_libreoffice(){
       -v /tmp/.X11-unix:/tmp/.X11-unix \
       woahbase/alpine-libreoffice:x86_64
 }
+
+alias lsdir="ls -d */"

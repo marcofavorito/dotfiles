@@ -288,4 +288,13 @@ git update-index --no-assume-unchanged [<file> ...]
 man <cmd>
 info <cmd>
 
+## Latex
 
+Install:
+https://www.latex-project.org/get/
+https://www.tug.org/texlive/acquire-netinstall.html
+https://github.com/scottkosty/install-tl-ubuntu
+
+Troubleshooting:
+https://tex.stackexchange.com/questions/187073/permission-problem-when-installing-package-from-tlmgr/484729
+https://askubuntu.com/questions/485514/how-to-properly-install-and-use-texlive-with-package-manager
