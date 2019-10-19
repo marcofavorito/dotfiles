@@ -1,0 +1,47 @@
+% !TeX encoding = UTF-8
+% !TeX program = pdflatex
+% !TeX spellcheck = en_US
+
+
+\documentclass[binding=0.6cm,PhD]{sapthesis}
+\usepackage{microtype}
+
+
+\usepackage{hyperref}
+\hypersetup{pdftitle={My thesis},pdfauthor={Marco Favorito}}
+\title{A Title}
+\author{Marco Favorito}
+\IDnumber{1609890}
+\course[]{Engineering in Computer Science}
+\courseorganizer{Facolt\`a di Ingegneria dell'Informazione, Informatica e Statistica}
+\submitdate{2018/2019}
+\copyyear{2019}
+\advisor{Prof. Giuseppe De Giacomo}
+\cycle{XXXIII}
+\authoremail{favorito@diag.uniroma1.it}
+\examdate{$22^{\text{th}}$ October 2019}
+\allowdisplaybreaks
+
+\begin{document}
+
+\frontmatter
+\maketitle
+%\dedication{Dedicated to Donald Knuth}
+
+\begin{abstract}
+This thesis deals with myself.
+\end{abstract}
+
+\tableofcontents
+
+\mainmatter
+\chapter{Introduction}...
+\backmatter
+\cleardoublepage
+
+\phantomsection % Give this command only if hyperref is loaded
+\addcontentsline{toc}{chapter}{\bibname}
+% Here put the code for the bibliography. You can use BibTeX or
+% the BibLaTeX package or the simple environment thebibliography.
+
+\end{document}

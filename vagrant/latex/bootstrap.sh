@@ -8,8 +8,22 @@ if ! [ -L /var/www ]; then
   ln -fs /vagrant /var/www
 fi
 
-apt-get install -y texlive-latex-base
-apt-get install -y latexmk
-apt-get install -y texlive-bibtex-extra 
-apt-get install -y biber
-apt-get install -y xpdf
+apt-get install -y              \
+    texlive-latex-base          \
+    texlive-latex-extra         \
+    texlive-latex-recommended   \
+    texlive-bibtex-extra        \
+    xzdec                       \
+    latexmk                     \
+    biber                       \ 
+    xpdf                        \
+    xzdec
+
+
+tlmgr option repository http://mirror.ctan.org/systems/texlive/tlnet
+tlmgr update --all
+tlmgr install biblatex
+tlmgr install logreq 
+tlmgr install csquotes 
+tlmgr install inputenc 
+

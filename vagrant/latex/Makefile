@@ -11,6 +11,6 @@ all: ${PDF}
 
 clean:
 	latexmk -C
-	-rm -fr ${PDF} main.run.xml *.bbl
+	-rm -fr ${PDF} main.run.xml *.bbl *.nlo
     
 
