@@ -298,3 +298,7 @@ https://github.com/scottkosty/install-tl-ubuntu
 Troubleshooting:
 https://tex.stackexchange.com/questions/187073/permission-problem-when-installing-package-from-tlmgr/484729
 https://askubuntu.com/questions/485514/how-to-properly-install-and-use-texlive-with-package-manager
+https://stackoverflow.com/questions/1673942/latex-table-positioning
+https://en.wikibooks.org/wiki/LaTeX/Tables#The_tabu_environment
+https://tex.stackexchange.com/questions/2275/keeping-tables-figures-close-to-where-they-are-mentioned
+https://texfaq.org/FAQ-floats

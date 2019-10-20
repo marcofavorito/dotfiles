@@ -80,5 +80,5 @@ bind E confirm-before kill-session
 # Status bar
 #######################################
 set -g status-right-length 300
-set -g status-right '#[[fg=green][#[fg=black]#(echo $USER) @ #H][#[fg=black]%h %d %Y #[bg=green,fg=black]%H:%M]#[fg=black][CPU=#(_tmux-cpu-usage.sh) MEM=#(_tmux-mem-usage.sh)][RX=#(_tmux-net-recv-usage.sh) TX=#(_tmux-net-send-usage.sh)]#[default]'
+set -g status-right '[#(_tmux-git-branch.sh)]#[[fg=green][#[fg=black]#(echo $USER) @ #H][#[fg=black]%h %d %Y #[bg=green,fg=black]%H:%M]#[fg=black][CPU=#(_tmux-cpu-usage.sh) MEM=#(_tmux-mem-usage.sh)][RX=#(_tmux-net-recv-usage.sh) TX=#(_tmux-net-send-usage.sh)]#[default]'
 
