@@ -17,6 +17,7 @@ keybase*.deb
 .vagrant
 
 
-# this is needed to avoid to disclose the slack API Token.
+# this is needed to avoid to disclose of secrets.
 slack-term/slack-term.symlink/
+system/msmtprc.symlink
 

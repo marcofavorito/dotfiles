@@ -9,17 +9,17 @@
 # you can also write "xdg-open", on windows-cygwin, you can set it to
 # "cygstart"
 #
-opentool = rifle
+#opentool = rifle
 # Use ranger as a file browser, a nice python program
 file-browser = ranger
 # Ask for confirmation when doing papis add
 add-confirm = True
 # Edit the info.yaml file before adding a doc into the library
 # papis add --edit
-add-edit = True
+#add-edit = True
 # Open the files before adding a document into the library
 # papis add --open
-add-open = True
+#add-open = True
 #
 # Define custom default match and header formats
 #
@@ -49,7 +49,7 @@ tui-options_list.unselected_margin_style = bg:blue
 # use whoosh as a database for papers
 database-backend = whoosh
 # rename files added by author and title
-add-file-name = {doc[author]}{doc[title]}
+add-file-name = {doc[author]}{doc[title]}{doc[year]}
 
 # Define a lib for books
 [books]
