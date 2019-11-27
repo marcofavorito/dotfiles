@@ -85,6 +85,11 @@ http://irtfweb.ifa.hawaii.edu/~lockhart/gpg/
     gpg --export-secret-keys > key.asc
     keybase pgp import --infile key.asc
 
+- Import public key:
+
+    curl http://url/to/key.asc | gpg --import
+
+
 - Encrypt message
 
     gpg --output myfile.txt.gpg --encrypt --recipient marco.favorito@gmail.com myfile.txt
