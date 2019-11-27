@@ -7,3 +7,5 @@ _secret_ Slack API Token...
 `default.json` is a symbolic link to one of them. `default.json` is
 used in the alias `mslack-term`.
 
+To issue Slack (legacy) tokens, go [here](https://api.slack.com/custom-integrations/legacy-tokens)
+
