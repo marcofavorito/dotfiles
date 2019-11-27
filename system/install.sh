@@ -34,5 +34,4 @@ sudo apt-get install -y w3m
 sudo apt install -y vlc
 sudo pip3 install --user git+https://github.com/marcofavorito/py-vlcclient.git#egg=vlcclient
 sudo pip3 install --user youtube-dl
-sudo pip3 install --user papis
 

@@ -1,0 +1,6 @@
+[papers]
+dir = ~/bookshelf
+
+[settings]
+default-library = bookshelf
+
