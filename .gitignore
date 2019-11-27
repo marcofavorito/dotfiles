@@ -18,5 +18,5 @@ keybase*.deb
 
 
 # this is needed to avoid to disclose the slack API Token.
-slack-term/slack-term.symlink
+slack-term/slack-term.symlink/
 
