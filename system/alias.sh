@@ -53,3 +53,4 @@ function docker_libreoffice(){
 }
 
 alias lsdir="ls -d */"
+alias mgrep="grep -Hnr "
