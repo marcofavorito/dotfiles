@@ -31,6 +31,10 @@ header-format = <red>{doc.html_escape[title]}</red>
   <span color='#ff00ff'>  {doc.html_escape[author]}</span>
   <yellow>   ({doc.html_escape[year]})</yellow>
 
+editor = vim
+browser = firefox
+opentool = firefox
+
 [tui]
 editmode = vi
 options_list.selected_margin_style = bg:ansigreen fg:ansired
@@ -40,7 +44,7 @@ options_list.unselected_margin_style =
 
 # Define a lib
 [papers]
-dir = ~/bookshelf
+dir = ~/bookshelf/bookshelf/papers
 
 # override settings from the section tui only for the papers library
 # you have to prepend "tui-" to the settings
@@ -53,16 +57,17 @@ add-file-name = {doc[author]}{doc[title]}{doc[year]}
 
 # Define a lib for books
 [books]
-dir = ~/bookshelf/books
+dir = ~/bookshelf/bookshelf/books
 database-backend = whoosh
 
 # Define a lib for Videos
 [videos]
-dir = ~/bookshelf/videos
+dir = ~/bookshelf/bookshelf/videos
+database-backend = whoosh
 
 [websites]
-dir = ~/bookshelf/websites
-
+dir = ~/bookshelf/bookshelf/websites
+database-backend = whoosh
 
 # Define a lib for contacts, why not?
 # To make it work you just have to define some default settings
@@ -75,5 +80,5 @@ match-format = {doc[org]} {doc[first_name]} {doc[last_name]}
 browse-query-format = {doc[first_name]} {doc[last_name]}
 add-open = False
 
-# whoosh-schema-fields = ['author', 'year', 'title', 'tags', 'publisher']
+ whoosh-schema-fields = ['author', 'year', 'title', 'type', 'tags', 'publisher']
 
