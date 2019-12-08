@@ -1,0 +1,27 @@
+set ssl_starttls=yes
+set ssl_force_tls=yes
+
+source "gpg -d ~/.mutt/passwords.gpg |"
+
+set imap_user = "marco.favorito@gmail.com"
+# set imap_pass = "PASSWORD"
+
+set from="marco.favorito@gmail.com"
+set realname="Marco Favorito"
+
+set folder = "imaps://imap.gmail.com/"
+set spoolfile = "imaps://imap.gmail.com/INBOX"
+set postponed="imaps://imap.gmail.com/[Gmail]/Drafts"
+
+set header_cache = "~/.mutt/cache/headers"
+set message_cachedir = "~/.mutt/cache/bodies"
+set certificate_file = "~/.mutt/certificates"
+
+set smtp_url = "smtps://marco.favorito@gmail.com:$imap_pass@smtp.gmail.com:465/"
+
+set move = no
+set imap_keepalive = 900
+
+set editor="vim"
+bind index G imap-fetch-mail
+

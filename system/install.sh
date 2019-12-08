@@ -28,9 +28,7 @@ sudo snap install slack-term
 sudo apt-get install -y xpdf
 sudo apt-get install -y console-common
 sudo apt-get install -y xclip
-sudo apt-get install -y msmtp-mta
-sudo apt-get install -y heirloom-mailx
-# sudo apt-get install -y mailutils
+sudo apt-get install -y mutt
 sudo apt-get install -y googler
 sudo googler --upgrade
 sudo apt-get install -y w3m

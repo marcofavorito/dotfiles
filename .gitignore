@@ -21,3 +21,9 @@ keybase*.deb
 slack-term/slack-term.symlink/
 system/msmtprc.symlink
 
+mutt.symlink/passwords.gpg
+mutt.symlink/passwords
+mutt.symlink/cache
+mutt.symlink/certificates
+
+
