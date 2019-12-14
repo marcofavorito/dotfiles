@@ -16,3 +16,6 @@
 [submodule "kubectl/kubectx"]
 	path = kubectl/kubectx
 	url = https://github.com/ahmetb/kubectx.git
+[submodule "ohmyzsh"]
+	path = ohmyzsh
+	url = https://github.com/marcofavorito/ohmyzsh.git

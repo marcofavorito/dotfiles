@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
 
-# shortcut to this dotfiles path is $ZSH
-export ZSH=$HOME/.dotfiles
-
 # Stash your environment variables in ~/.localrc. This means they'll stay out
 # of your main dotfiles repository (which may be public, like this one), but
 # you'll have access to them in your scripts.
@@ -11,21 +8,24 @@ then
   source ~/.localrc
 fi
 
+
+source $HOME/.dotfiles/system/env.sh
+
 # all of our zsh files
 #typeset -u config_files
-#config_files=($ZSH/**/*.sh)
+#config_files=($DOTFILES/**/*.sh)
 #echo $config_files
 
 # load the path files
 #for file in ${(M)config_files:#*/path.sh}
-for file in $(find $ZSH/ -maxdepth 2 -name path.sh)
+for file in $(find $DOTFILES/ -maxdepth 2 -name path.sh)
 do
   source $file
 done
 
 # load everything but the path and completion files
 #for file in ${${config_files:#*/path.sh}:#*/completion.sh}
-for file in $(find $ZSH/ -maxdepth 2 -name env.sh -or -name alias.sh)
+for file in $(find $DOTFILES/ -maxdepth 2 -name env.sh -or -name alias.sh)
 do
   source $file
 done
@@ -36,7 +36,7 @@ done
 
 # load every completion after autocomplete loads
 #for file in ${(M)config_files:#*/completion.sh}
-for file in $(find $ZSH/ -maxdepth 2 -name completion.sh)
+for file in $(find $DOTFILES/ -maxdepth 2 -name completion.sh)
 do
   source $file
  done
@@ -77,7 +77,7 @@ fi
 
 # start tmux by default
 # https://www.reddit.com/r/tmux/comments/5nj8yi/am_i_nesting_session/
-if [ "$TMUX" == "" ] ; then
+if [ "$TMUX" = "" ] ; then
     tmux attach || tmux new -s base
 fi
 

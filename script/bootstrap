@@ -149,18 +149,18 @@ install_dependencies () {
   fi
 }
 
-append_to_bashrc () {
-  info "append 'source' line to .bashrc" 
+append_to_rc () {
+  info "append 'source' line to $1" 
   echo "$DOTFILES_ROOT"
-  grep -q -F 'source "$HOME/.dotfiles/bash/dotfilesrc"' ~/.bashrc ||\
-     echo 'source "$HOME/.dotfiles/bash/dotfilesrc"' >> ~/.bashrc
+  grep -q -F 'source "$HOME/.dotfiles/bash/dotfilesrc"' $1 ||\
+     echo 'source "$HOME/.dotfiles/bash/dotfilesrc"' >> $1 
 
 }
 
 setup_gitconfig
 install_dotfiles
 #install_dependencies
-append_to_bashrc
+append_to_rc ~/.zshrc
 
 echo ''
 echo '  All installed!'

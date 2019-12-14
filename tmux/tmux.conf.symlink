@@ -1,3 +1,6 @@
+# set shell
+set -g default-shell /bin/zsh
+
 # 256 colors for vim
 set -g default-terminal "screen-256color"
 

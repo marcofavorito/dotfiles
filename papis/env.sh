@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
 
-source /usr/local/etc/bash_completion.d/papis.sh
+eval "$(_PAPIS_COMPLETE=source_zsh papis)"
+
+# source /usr/local/etc/bash_completion.d/papis.sh
 

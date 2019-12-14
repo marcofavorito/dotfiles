@@ -79,5 +79,5 @@ header-format = {doc[first_name]} {doc[last_name]}
 match-format = {doc[org]} {doc[first_name]} {doc[last_name]}
 browse-query-format = {doc[first_name]} {doc[last_name]}
 
-whoosh-schema-fields = ['author', 'year', 'title', 'type', 'tags', 'publisher']
+whoosh-schema-fields = ['author', 'year', 'title', 'type', 'tags', 'publisher', 'abstract']
 
