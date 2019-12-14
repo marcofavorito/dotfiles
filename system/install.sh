@@ -22,6 +22,7 @@ sudo apt-get install -y latexmk
 sudo apt-get install -y ruby-full ruby-bundler
 sudo apt-get install -y jekyll
 sudo apt-get install -y golang
+sudo apt-get install -y fonts-powerline
 
 # utils
 sudo snap install slack-term
