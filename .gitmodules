@@ -16,6 +16,3 @@
 [submodule "kubectl/kubectx"]
 	path = kubectl/kubectx
 	url = https://github.com/ahmetb/kubectx.git
-[submodule "ohmyzsh-custom/plugins/zsh-completions"]
-	path = ohmyzsh-custom/plugins/zsh-completions
-	url = https://github.com/zsh-users/zsh-completions
