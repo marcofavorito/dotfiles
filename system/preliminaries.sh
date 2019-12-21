@@ -6,6 +6,7 @@ sudo apt install subversion -y
 sudo apt install vim -y
 sudo apt install golang -y
 sudo apt install curl -y
+sudo apt install ssh -y
 
 # install Docker on Ubuntu:
 # https://docs.docker.com/install/linux/docker-ce/ubuntu/
@@ -34,3 +35,10 @@ sudo add-apt-repository \
 sudo apt-get update
 sudo apt-get install -y docker-ce docker-ce-cli containerd.io
 
+
+
+# Clone all submodules
+git submodule init
+git submodule update --init --recursive
+
+git submodule foreach git pull origin master

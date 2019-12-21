@@ -166,6 +166,6 @@ noremap <silent> ,cu :<C-B>silent <C-E>s/^\V<C-R>=escape(b:comment_leader,'\/')<
 """"""""""""""""""""""""""""""""""""""""""""""""""
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " Source other vimrcs
-source $VIM_HOME/vimrcs/python.vimrc
+source $HOME/.vim/vimrcs/python.vimrc
 
 

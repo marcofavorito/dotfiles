@@ -1,11 +1,13 @@
 #!/usr/bin/env bash
 
-pip3 install --user -U whoosh
-pip3 install --user -U papis
-rip3 install --user -U papis-zotero
+python3 -m pip install --user -U whoosh
+python3 -m pip install --user -U papis
+python3 -m pip install --user -U papis-zotero
 
 if [ ! -d $HOME/bookshelf ]; then
     echo "cloning 'bookshelf'"
     git clone https://github.com/marcofavorito/my-bookshelf.git "$HOME/bookshelf";
+else
+    cd $HOME/bookshelf && git pull origin master && cd -
 fi
 

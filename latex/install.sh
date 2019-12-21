@@ -7,14 +7,16 @@ sudo apt-get install -y         \
     texlive-bibtex-extra        \
     xzdec                       \
     latexmk                     \
-    biber                       \ 
+    biber                       \
     xpdf                        \
     xzdec
 
+
+sudo tlmgr init-usertree
 sudo tlmgr option repository ftp://tug.org/historic/systems/texlive/2017/tlnet-final
 sudo tlmgr update --all
 sudo tlmgr install biblatex
-sudo tlmgr install logreq 
-sudo tlmgr install csquotes 
-sudo tlmgr install inputenc 
+sudo tlmgr install logreq
+sudo tlmgr install csquotes
+sudo tlmgr install inputenc
 

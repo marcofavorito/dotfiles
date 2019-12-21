@@ -16,8 +16,8 @@ sudo apt-get install -y gnupg2 &&\
 sudo apt-get install -y virtualbox &&\
 
 # programming utils
-pip2 install --user -U pre-commit
-pip3 install --user -U liccheck
+python2 -m pip install --user -U pre-commit
+python3 -m pip install --user -U liccheck
 sudo apt-get install -y latexmk
 sudo apt-get install -y ruby-full ruby-bundler
 sudo apt-get install -y jekyll
@@ -36,6 +36,6 @@ sudo googler --upgrade
 sudo apt-get install -y w3m
 sudo apt install -y vlc
 sudo apt-get install -y zathura
-pip3 install --user git+https://github.com/marcofavorito/py-vlcclient.git#egg=vlcclient
-pip3 install --user youtube-dl
+python3 -m pip install --user -U git+https://github.com/marcofavorito/py-vlcclient.git#egg=vlcclient
+python3 -m pip install --user -U youtube-dl
 
