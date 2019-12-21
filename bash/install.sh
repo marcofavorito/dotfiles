@@ -13,5 +13,5 @@ fi
 ZSH_CUSTOM="$HOME/.dotfiles/ohmyzsh-custom"
 svn export https://github.com/littleq0903/gcloud-zsh-completion.git/trunk/src "$ZSH_CUSTOM/plugins/zsh-completions/src" --force
 
-sudo chsh -s /bin/zsh
+chsh -s `which zsh`
 
