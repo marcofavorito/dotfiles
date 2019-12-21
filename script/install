@@ -7,6 +7,9 @@ set -e
 cd "$(dirname $0)"/..
 source ./system/env.sh
 
+# install the preliminaries
+./system/preliminaries.sh
+
 # find the installers and run them iteratively
 find . -maxdepth 2 -name install.sh | while read installer ; do echo "$installer"; bash -c "${installer}" ; done
 
