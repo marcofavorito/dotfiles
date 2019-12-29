@@ -2,6 +2,15 @@ sudo apt-get update -y && sudo apt-get upgrade -y
 
 sudo apt-get dist-upgrade -y
 
+# Python utils
+sudo apt install -y python3-pip 
+python3 -m pip install --upgrade pip
+python3 -m pip install --force --no-cache-dir --user -U pipenv 
+python3 -m pip install --force --no-cache-dir --user -U virtualenv
+python3 -m pip install --force --no-cache-dir --user -U virtualenvwrapper
+python3 -m pip install --user -U ipython
+python3 -m pip install --user -U jupyter
+
 # OS monitoring
 sudo apt-get install -y htop &&\
 sudo apt-get install -y dstat &&\

@@ -8,6 +8,7 @@ sudo apt install golang -y
 sudo apt install curl -y
 sudo apt install ssh -y
 
+####################################################################### 
 # install Docker on Ubuntu:
 # https://docs.docker.com/install/linux/docker-ce/ubuntu/
 
@@ -34,6 +35,12 @@ sudo add-apt-repository \
 
 sudo apt-get update
 sudo apt-get install -y docker-ce docker-ce-cli containerd.io
+
+
+sudo groupadd docker
+sudo usermod -aG docker $USER
+sudo systemctl enable docker
+#######################################################################
 
 
 
