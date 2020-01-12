@@ -2,11 +2,13 @@
 
 sudo apt install -y git python-pip make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev libffi-dev
 
-export PYENV_ROOT="$HOME/.dotfiles/pyenv/pyenv.symlink"
-export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
+curl -L https://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-installer | bash
+
+source ~/.dotfiles/pyenv/env.sh
 
 pyenv install 3.7.6 -s
-pyenv global 3.7.6
+pyenv install 3.8.1 -s
+pyenv install 3.6.9 -s
+pyenv global 3.7.6 3.8.1 3.6.9
 
 
