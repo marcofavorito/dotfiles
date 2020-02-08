@@ -9,6 +9,6 @@ source ~/.dotfiles/pyenv/env.sh
 pyenv install 3.7.6 -s
 pyenv install 3.8.1 -s
 pyenv install 3.6.9 -s
-pyenv global 3.7.6 3.8.1 3.6.9
+pyenv global 3.7.6
 
 
