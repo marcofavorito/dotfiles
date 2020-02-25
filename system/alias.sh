@@ -2,6 +2,7 @@
 
 # misc utils
 alias cclip='xclip -selection clipboard'
+alias zclip='xclip -sel clip'
 alias copyLastCmd="fc -ln -1 | awk '{\$1=\$1}1' | cclip "
 
 function getpods() {

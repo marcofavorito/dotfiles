@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# papis-short-help: Email a paper to my friend
+
+echo "I don't work yet :-)"
+exit 1
+
+folder_name=$1
+zip_name="${folder_name}.zip"
+
+papis -l ${PAPIS_LIB} export --folder --out ${folder_name}
+zip -r ${zip_name} ${folder_name}
+
+mutt -a ${zip_name}
+
+
