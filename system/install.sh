@@ -30,7 +30,6 @@ python2 -m pip install --user -U pre-commit
 python3 -m pip install --user -U liccheck
 sudo apt-get install -y latexmk
 sudo apt-get install -y jekyll
-sudo apt-get install -y golang
 sudo apt-get install -y fonts-powerline
 
 # utils

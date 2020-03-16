@@ -13,3 +13,6 @@
 [submodule "kubectl/kubectx.symlink"]
 	path = kubectl/kubectx.symlink
 	url = https://github.com/ahmetb/kubectx.git
+[submodule "third_party/git-latexdiff"]
+	path = third_party/git-latexdiff
+	url = https://gitlab.com/git-latexdiff/git-latexdiff.git
