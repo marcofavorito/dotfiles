@@ -8,6 +8,8 @@ export PATH=$PATH:$HOME/go/bin
 export PATH=$PATH:/usr/local/bin
 export GOPATH="$(go env GOPATH)"
 
+export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
+
 export DISTRO_VERSION=$(lsb_release -sc)
 
 # for googler
