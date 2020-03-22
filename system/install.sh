@@ -31,6 +31,10 @@ python3 -m pip install --user -U liccheck
 sudo apt-get install -y latexmk
 sudo apt-get install -y jekyll
 sudo apt-get install -y fonts-powerline
+# yarn
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+sudo apt-get update && sudo apt-get install -y yarn
 
 # utils
 sudo snap install slack-term
