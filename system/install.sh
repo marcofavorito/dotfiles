@@ -24,6 +24,7 @@ python3 -m pip install --force --no-cache-dir --user -U virtualenvwrapper
 python3 -m pip install --force --no-cache-dir --user -U poetry
 python3 -m pip install --user -U ipython
 python3 -m pip install --user -U jupyter
+python3 -m pip install --user -U pipx
 
 # programming utils
 python2 -m pip install --user -U pre-commit
