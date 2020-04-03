@@ -3,6 +3,7 @@
 
 sudo apt update
 sudo apt install -y zsh
+sudo apt install -y svn
 
 if [ ! -d $HOME/.oh-my-zsh ]; then
     git clone https://github.com/ohmyzsh/ohmyzsh/ $HOME/.oh-my-zsh

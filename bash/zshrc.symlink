@@ -105,9 +105,6 @@ alias zshconfig="vim ~/.zshrc"
 # ---------------------------------------------------
 # ---------------------------------------------------
 
-# added by travis gem
-[ -f /home/marcofavorito/.travis/travis.sh ] && source /home/marcofavorito/.travis/travis.sh
-
 
 source "$HOME/.dotfiles/bash/dotfilesrc"
 

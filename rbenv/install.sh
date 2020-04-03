@@ -2,12 +2,9 @@
 
 sudo apt install -y autoconf bison build-essential libssl-dev libyaml-dev libreadline6-dev zlib1g-dev libncurses5-dev libffi-dev libgdbm6 libgdm-dev
 
-curl -fsSL https://github.com/rbenv/rbenv-installer/raw/master/bin/rbenv-installer | bash
+sudo apt install -y rbenv
 
-cd ~/.rbenv && src/configure && make -C src
-cd ~/.dotfiles
-
-~/.rbenv/bin/rbenv init
+rbenv init
 
 # to check successful installation, do:
 #curl -fsSL https://github.com/rbenv/rbenv-installer/raw/master/bin/rbenv-doctor | bash
@@ -21,6 +18,6 @@ fi
 git -C "$(rbenv root)"/plugins/ruby-build pull 
 
 
-~/.rbenv/bin/rbenv install 2.7.0
+rbenv install 2.7.0
 gem install bundler
 
