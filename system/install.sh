@@ -38,6 +38,7 @@ echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/source
 sudo apt-get update && sudo apt-get install -y yarn
 
 # utils
+sudo apt-get install -y gnome-tweak-tool
 sudo snap install slack-term
 sudo apt-get install -y xpdf
 sudo apt-get install -y console-common

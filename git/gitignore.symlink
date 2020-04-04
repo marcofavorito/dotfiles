@@ -36,3 +36,6 @@ main.run.xml
 # misc
 .vagrant
 
+# create a directory 'ignoredir' in a Git repository
+# to store misc files
+ignoredir/
