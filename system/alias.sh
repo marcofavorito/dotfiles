@@ -55,3 +55,18 @@ function docker_libreoffice(){
 
 alias lsdir="ls -d */"
 alias mgrep="grep -Hnr "
+
+
+# Check I can link to a static library
+function have_static_library(){
+# if the output is "/usr/bin/ld: cannot find -l$1" then you haven't got it.
+# if the output is (.text+0x24): undefined reference to `main'  then yes you have it.
+    gcc -l$1
+}
+
+function have_shared_library(){
+# if the output is empty, then you haven't got it
+    ldconfig -p | grep $1
+}
+
+
