@@ -70,3 +70,6 @@ function have_shared_library(){
 }
 
 
+alias=perfrg="perf report -g" 
+alias=perfrgc="perf report -g 'graph,0.5,caller'"
+

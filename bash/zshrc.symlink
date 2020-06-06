@@ -110,3 +110,8 @@ source "$HOME/.dotfiles/bash/dotfilesrc"
 
 # ---------------------------------------------------
 # ---------------------------------------------------
+
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/home/marcofavorito/Downloads/google-cloud-sdk-293.0.0-linux-x86_64/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/marcofavorito/Downloads/google-cloud-sdk-293.0.0-linux-x86_64/google-cloud-sdk/completion.zsh.inc'; fi
+
