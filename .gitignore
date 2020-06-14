@@ -26,4 +26,8 @@ mutt.symlink/passwords
 mutt.symlink/cache
 mutt.symlink/certificates
 
+zcash.symlink/*
+!zcash.symlink/install.sh
+!zcash.symlink/env.sh
+!zcash.symlink/zcash.conf
 

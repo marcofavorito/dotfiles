@@ -51,6 +51,11 @@ sudo googler --upgrade
 sudo apt-get install -y w3m
 sudo apt install -y vlc
 sudo apt-get install -y zathura
-python3 -m pip install --user -U git+https://github.com/marcofavorito/py-vlcclient.git#egg=vlcclient
-python3 -m pip install --user -U youtube-dl
+pipx install --force git+https://github.com/marcofavorito/py-vlcclient.git#egg=vlcclient
+pipx install --force youtube-dl
+
+# cryptos
+## bitcoin
+sudo snap install bitcoin-core
+
 
