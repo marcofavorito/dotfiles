@@ -16,3 +16,6 @@
 [submodule "third_party/git-latexdiff"]
 	path = third_party/git-latexdiff
 	url = https://gitlab.com/git-latexdiff/git-latexdiff.git
+[submodule "vim.symlink/pack/typescript/start/typescript-vim"]
+	path = vim.symlink/pack/typescript/start/typescript-vim
+	url = https://github.com/leafgarland/typescript-vim.git
