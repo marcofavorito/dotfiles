@@ -17,19 +17,19 @@ sudo apt-get install -y virtualbox &&\
 
 # Python utils
 sudo apt install -y python3-pip 
+python3 -m pip install --user -U pipx
 python3 -m pip install --upgrade pip
 python3 -m pip install --upgrade pipx
-python3 -m pip install --force --no-cache-dir --user -U pipenv 
-python3 -m pip install --force --no-cache-dir --user -U virtualenv
-python3 -m pip install --force --no-cache-dir --user -U virtualenvwrapper
-python3 -m pip install --force --no-cache-dir --user -U poetry
-python3 -m pip install --user -U ipython
-python3 -m pip install --user -U jupyter
-python3 -m pip install --user -U pipx
+pipx install --force pipenv 
+pipx install --force virtualenv
+pipx install --force virtualenvwrapper
+pipx install --force poetry
+pipx install --force ipython
+pipx install --force jupyter
 
 # programming utils
-python2 -m pip install --user -U pre-commit
-python3 -m pip install --user -U liccheck
+pipx install --force pre-commit
+pipx install --force liccheck
 sudo apt-get install -y latexmk
 sudo apt-get install -y jekyll
 sudo apt-get install -y fonts-powerline
@@ -53,6 +53,8 @@ sudo apt install -y vlc
 sudo apt-get install -y zathura
 pipx install --force git+https://github.com/marcofavorito/py-vlcclient.git#egg=vlcclient
 pipx install --force youtube-dl
+pipx install --force pdfkit
+pipx install --force concentration
 
 # cryptos
 ## bitcoin

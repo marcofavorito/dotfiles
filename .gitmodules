@@ -19,3 +19,6 @@
 [submodule "vim.symlink/pack/typescript/start/typescript-vim"]
 	path = vim.symlink/pack/typescript/start/typescript-vim
 	url = https://github.com/leafgarland/typescript-vim.git
+[submodule "misc/cppreference-doc"]
+	path = misc/cppreference-doc
+	url = https://github.com/PeterFeicht/cppreference-doc
