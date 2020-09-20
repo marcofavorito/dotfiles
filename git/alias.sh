@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 # shortcuts for git
-alias ga="git add"
+#alias ga="git add"
 alias gb="git branch"
 alias gd="git diff --patience --ignore-space-change"
-alias gh="git log --pretty=format:\"%Cgreen%h%Creset %Cblue%ad%Creset %s%C(yellow)%d%Creset %Cblue[%an]%Creset\" --graph --date=short"
-alias gc="git checkout"
+alias gll="git log --pretty=format:\"%Cgreen%h%Creset %Cblue%ad%Creset %s%C(yellow)%d%Creset %Cblue[%an]%Creset\" --graph --date=short"
+#alias gc="git checkout"
 alias gs="git status"
 alias gits="git commit -S -m $1"
 alias gcam="git commit --amend"
@@ -18,7 +18,6 @@ alias gpod="git push origin develop"
 alias gpl="git pull origin HEAD" 
 alias gpld="git pull origin develop"
 alias gclo="git clone --recursive"
-alias gfa="git fetch --all"
 
 git config --global alias.pullall '!f(){ git pull "$@" && git submodule sync --recursive && git submodule update --init --recursive; }; f'
 git config --global alias.syncUpdate '!f(){ git submodule sync --recursive && git submodule update --init --recursive; }; f'
