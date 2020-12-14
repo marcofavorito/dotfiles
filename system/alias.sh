@@ -73,3 +73,17 @@ function have_shared_library(){
 alias=perfrg="perf report -g" 
 alias=perfrgc="perf report -g 'graph,0.5,caller'"
 
+alias=myvalgrind="valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes --verbose --log-file=valgrind-out.txt "
+
+alias=svg2pdf="inkscape -D -z --file=image.svg --export-pdf=image.pdf --export-latex"
+alias=svg2png="inkscape -z -w 1024 -h 1024 input.svg -e output.png"
+
+
+function preconfigure(){
+    libtoolize --force
+    aclocal
+    autoheader
+    automake --force-missing --add-missing
+    autoconf
+}
+
