@@ -22,3 +22,6 @@
 [submodule "misc/cppreference-doc"]
 	path = misc/cppreference-doc
 	url = https://github.com/PeterFeicht/cppreference-doc
+[submodule "vim.symlink/pack/vendor/start/nerdtree"]
+	path = vim.symlink/pack/vendor/start/nerdtree
+	url = https://github.com/preservim/nerdtree.git
