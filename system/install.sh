@@ -47,6 +47,7 @@ sudo apt-get install -y xclip
 sudo apt-get install -y mutt
 sudo apt-get install -y googler
 sudo apt-get install -y ddgr
+sudo apt-get install -y trickle
 sudo googler --upgrade
 sudo apt-get install -y w3m
 sudo apt install -y vlc
@@ -55,6 +56,7 @@ pipx install --force git+https://github.com/marcofavorito/py-vlcclient.git#egg=v
 pipx install --force youtube-dl
 pipx install --force pdfkit
 pipx install --force concentration
+sudo snap install ipfs
 
 # cryptos
 ## bitcoin
