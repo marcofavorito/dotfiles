@@ -87,3 +87,5 @@ function preconfigure(){
     autoconf
 }
 
+alias emptyswap="sudo swapoff -a && sudo swapon -a"
+
