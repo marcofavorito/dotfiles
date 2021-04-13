@@ -115,7 +115,23 @@ source "$HOME/.dotfiles/bash/dotfilesrc"
 # The next line enables shell command completion for gcloud.
 if [ -f '/home/marcofavorito/Downloads/google-cloud-sdk-293.0.0-linux-x86_64/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/marcofavorito/Downloads/google-cloud-sdk-293.0.0-linux-x86_64/google-cloud-sdk/completion.zsh.inc'; fi
 
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/marcofavorito/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/marcofavorito/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/marcofavorito/miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/marcofavorito/miniconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/home/marcofavorito/.sdkman"
 [[ -s "/home/marcofavorito/.sdkman/bin/sdkman-init.sh" ]] && source "/home/marcofavorito/.sdkman/bin/sdkman-init.sh"
+
