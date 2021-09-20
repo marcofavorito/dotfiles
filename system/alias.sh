@@ -88,4 +88,5 @@ function preconfigure(){
 }
 
 alias emptyswap="sudo swapoff -a && sudo swapon -a"
+alias sedri="find ./ -type f -not -path '*/\.git/*' | xargs sed -r -i "
 

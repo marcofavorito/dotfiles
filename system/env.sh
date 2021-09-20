@@ -15,4 +15,3 @@ export DISTRO_VERSION=$(lsb_release -sc)
 # for googler
 export BROWSER=w3m
 
-

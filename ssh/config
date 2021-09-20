@@ -1,0 +1,12 @@
+# marcofavorito account
+Host github.com-marcofavorito
+	HostName github.com
+	User git
+	IdentityFile ~/.ssh/id_rsa
+
+# marcofavorito-bi account
+Host github.com-marcofavorito-bi
+	HostName github.com
+	User git
+	IdentityFile ~/.ssh/bi_id_rsa
+
