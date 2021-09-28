@@ -28,3 +28,13 @@ function cloneAllFromUser(){
     curl https://api.github.com/users/$2/repos?token=$1 | jq .[].ssh_url | xargs -I{} -P10 git clone --recursive {}
 }
 
+function config-git-bdi(){
+    git config user.name "Marco Favorito"
+    git config user.email marco.favorito@bancaditalia.it
+}
+
+function config-git-normal(){
+    git config user.name "Marco Favorito"
+    git config user.email marco.favorito@gmail.com
+
+}
