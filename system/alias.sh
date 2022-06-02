@@ -90,3 +90,4 @@ function preconfigure(){
 alias emptyswap="sudo swapoff -a && sudo swapon -a"
 alias sedri="find ./ -type f -not -path '*/\.git/*' | xargs sed -r -i "
 
+alias myconcentration="sudo ~/.local/pipx/venvs/concentration/bin/python3 ~/.local/bin/concentration"
