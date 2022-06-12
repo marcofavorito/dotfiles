@@ -17,12 +17,11 @@ sudo apt-get install -y virtualbox &&\
 
 # Python utils
 sudo apt install -y python3-pip 
-python3 -m pip install --user -U pipx
 python3 -m pip install --upgrade pip
-python3 -m pip install --upgrade pipx
+python3 -m pip install virtualenv
+python3 -m pip install virtualenvwrapper
+sudo apt install -y pipx
 pipx install --force pipenv 
-pipx install --force virtualenv
-pipx install --force virtualenvwrapper
 pipx install --force poetry
 pipx install --force ipython
 pipx install --force jupyter
@@ -62,4 +61,8 @@ sudo snap install ipfs
 ## bitcoin
 sudo snap install bitcoin-core
 
+# shell
+sudo apt install -y zsh
+chsh -s $(which zsh)
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 

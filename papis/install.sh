@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
-python3 -m pip install --user -U whoosh
-python3 -m pip install --user -U papis
-python3 -m pip install --user -U papis-zotero
+pip3 install --upgrade papis
+pip3 install --upgrade whoosh
+pip3 install --upgrade papis-zotero
 
 if [ ! -d $HOME/bookshelf ]; then
     echo "cloning 'bookshelf'"

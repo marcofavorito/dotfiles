@@ -34,6 +34,7 @@ header-format = <red>{doc.html_escape[title]}</red>
 editor = vim
 browser = firefox
 opentool = firefox
+default-library = papers
 
 [tui]
 #editmode = vi

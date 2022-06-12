@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
-sudo snap install -y kubectl --classic
+sudo snap install kubectl --classic
 

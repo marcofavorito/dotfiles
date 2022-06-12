@@ -19,28 +19,9 @@ sudo apt-get install -y \
     gnupg-agent \
     software-properties-common
 
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-sudo apt-key fingerprint 0EBFCD88
+curl -fsSL https://get.docker.com -o get-docker.sh
+DRY_RUN=1 sh ./get-docker.sh
 
-# TODO for Ubuntu 19.10 there's no release. so use 19.04 release
-# sudo add-apt-repository \
-#    "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
-#    $(lsb_release -cs) \
-#    stable"
-
-sudo add-apt-repository \
-   "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
-   disco \
-   stable"
-
-sudo apt-get update
-sudo apt-get install -y docker-ce docker-ce-cli containerd.io
-
-
-sudo groupadd docker
-sudo usermod -aG docker $USER
-newgrp docker
-sudo systemctl enable docker
 #######################################################################
 
 
