@@ -6,4 +6,5 @@ curl -L https://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-installer 
 
 source ~/.dotfiles/pyenv/env.sh
 
-
+sudo apt install -y liblzma5 liblzma-dev
+sudo apt install -y python-tk
