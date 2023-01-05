@@ -120,3 +120,7 @@ if [ -f '/home/marcofavorito/Downloads/google-cloud-sdk-293.0.0-linux-x86_64/goo
 export SDKMAN_DIR="/home/marcofavorito/.sdkman"
 [[ -s "/home/marcofavorito/.sdkman/bin/sdkman-init.sh" ]] && source "/home/marcofavorito/.sdkman/bin/sdkman-init.sh"
 
+
+autoload -Uz compinit
+zstyle ':completion:*' menu select
+fpath+=~/.zfunc
