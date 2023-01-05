@@ -47,3 +47,5 @@
 [pager]
     branch = false
 
+[init]
+	templatedir = ~/.git-templates

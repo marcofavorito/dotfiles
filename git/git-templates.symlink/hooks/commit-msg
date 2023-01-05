@@ -1,0 +1,17 @@
+#!/usr/bin/env python3
+import re, sys, os
+
+#turn off the traceback as it doesn't help readability
+sys.tracebacklimit = 0
+
+def main():
+    # example:
+    # feat(apikey): added the ability to add api key to configuration
+    pattern = r'(build|ci|docs|feat|fix|perf|refactor|style|test|chore|revert)(\([\w\-]+\))?:\s.*'
+    filename = sys.argv[1]
+    ss = open(filename, 'r').read()
+    m = re.match(pattern, ss)
+    if m == None: raise Exception("Conventional commit validation failed. Did you forget to add one of the allowed prefixes? (build|ci|docs|feat|fix|perf|refactor|style|test|chore|revert)")
+
+if __name__ == "__main__":
+    main()
