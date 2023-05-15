@@ -47,6 +47,7 @@ sudo apt-get install -y mutt
 sudo apt-get install -y googler
 sudo apt-get install -y ddgr
 sudo apt-get install -y trickle
+sudo apt-get install -y hyperfine
 sudo googler --upgrade
 sudo apt-get install -y w3m
 sudo apt install -y vlc
